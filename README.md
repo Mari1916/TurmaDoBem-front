@@ -147,8 +147,6 @@ A identidade visual do projeto foi inspirada na comunicação visual da **Turma 
 | ⚪ Cinza        | `#666666`   | Textos secundários |
 | ◻️ Cinza claro | `#F5F5F5`   | Seções e fundos    |
 
-> As cores utilizadas são uma aproximação visual inspirada na comunicação da Turma do Bem e não representam necessariamente os códigos oficiais de um manual de identidade visual.
-
 ---
 
 ## 📂 Estrutura do Projeto
