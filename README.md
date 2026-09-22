@@ -377,7 +377,7 @@ A evolução prevista inclui:
 **Ana Julia Castilho Soares** · RM00000 · 1TDSPS
 [GitHub](#) · [LinkedIn](#)
 
-**Maria Eduarda Alcantara** · RM00000 · 1TDSPS
+**Maria Eduarda Alcantara dos Santos** · RM00000 · 1TDSPS
 [GitHub](#) · [LinkedIn](#)
 
 **Mariana da Silva Freitas** · RM574261 · 1TDSPS
