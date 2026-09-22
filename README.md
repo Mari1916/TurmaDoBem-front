@@ -153,36 +153,67 @@ A identidade visual do projeto foi inspirada na comunicação visual da **Turma 
 
 TDB-Conecta/
 │
+
 ├── index.html
+
 ├── sobre.html
+
 ├── integrantes.html
+
 ├── faq.html
+
 ├── contato.html
+
 │
+
 ├── doar.html
+
 ├── voluntario.html
+
 ├── apoio.html
+
 ├── empresa.html
+
 │
+
 ├── login.html
+
 ├── cadastro.html
+
 ├── perfil.html
+
 ├── passaporte.html
+
 │
+
 ├── campanhas.html
+
 ├── campanha-detalhes.html
+
 ├── transparencia.html
+
 │
+
 ├── admin.html
+
 ├── oportunidades.html
+
 │
+
 ├── css/
+
 │   └── style.css
+
 │
+
 ├── imagens/
+
 │   ├── logo-tdb.png
+
 │   └── ...
+
 │
+
 └── README.md
 
 ---
