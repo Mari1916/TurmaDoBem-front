@@ -130,8 +130,6 @@ A solução também prevê integração com **Telegram por meio do Node-RED**, a
 * Banco de dados
 * Integrações com serviços externos
 
-> O Sprint 01 do Front-end utiliza exclusivamente **HTML e CSS**, conforme os requisitos da atividade.
-
 ---
 
 ## 🎨 Identidade Visual
