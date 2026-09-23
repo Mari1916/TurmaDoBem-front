@@ -1,0 +1,313 @@
+/* ==================================================
+   PÁGINA SOBRE
+================================================== */
+
+.page-hero {
+    padding: 75px 0;
+
+    background-color: var(--cinza-claro);
+
+    text-align: center;
+}
+
+.page-hero-content {
+    max-width: 850px;
+}
+
+.page-hero span {
+    color: var(--laranja-tdb);
+
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.page-hero h1 {
+    margin: 12px 0 18px;
+
+    font-size: 48px;
+    line-height: 1.15;
+}
+
+.page-hero h1 strong {
+    color: var(--verde-tdb);
+}
+
+.page-hero p {
+    max-width: 700px;
+    margin: 0 auto;
+
+    color: var(--cinza);
+    font-size: 17px;
+}
+
+
+/* ==================================================
+   INTRODUÇÃO
+================================================== */
+
+.about-intro {
+    padding: 90px 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 420px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+}
+
+.about-content h2 {
+    margin: 10px 0 22px;
+
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+
+    color: var(--cinza);
+}
+
+
+/* ==================================================
+   COMO FUNCIONA
+================================================== */
+
+.how-it-works {
+    padding: 90px 0;
+
+    background-color: var(--cinza-claro);
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.profile-card {
+    padding: 30px;
+
+    background-color: var(--branco);
+
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--verde-tdb);
+}
+
+.profile-card .card-icon {
+    margin-bottom: 15px;
+}
+
+.profile-card h3 {
+    margin-bottom: 12px;
+
+    font-size: 20px;
+}
+
+.profile-card p {
+    color: var(--cinza);
+    font-size: 14px;
+}
+
+
+/* ==================================================
+   PROPÓSITO
+================================================== */
+
+.purpose {
+    padding: 90px 0;
+
+    background-color: var(--verde-tdb);
+    color: var(--branco);
+}
+
+.purpose-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 80px;
+}
+
+.purpose .section-tag {
+    color: var(--branco);
+}
+
+.purpose-content h2 {
+    max-width: 650px;
+
+    margin: 10px 0 20px;
+
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.purpose-content p {
+    max-width: 650px;
+
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.purpose-highlight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.highlight-item {
+    min-height: 130px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 25px;
+
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
+}
+
+.highlight-item strong {
+    margin-bottom: 5px;
+
+    color: var(--laranja-tdb);
+
+    font-size: 30px;
+}
+
+.highlight-item span {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+
+/* ==================================================
+   TECNOLOGIA
+================================================== */
+
+.technology {
+    padding: 90px 0;
+}
+
+.technology-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.technology-card {
+    padding: 35px;
+
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.technology-card .card-icon {
+    margin-bottom: 15px;
+}
+
+.technology-card h3 {
+    margin-bottom: 12px;
+
+    font-size: 21px;
+}
+
+.technology-card p {
+    color: var(--cinza);
+    font-size: 14px;
+}
+
+
+/* ==================================================
+   CTA SOBRE
+================================================== */
+
+.about-cta {
+    padding: 65px 0;
+
+    background-color: var(--cinza-claro);
+}
+
+.about-cta-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-cta span {
+    color: var(--laranja-tdb);
+
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.about-cta h2 {
+    max-width: 650px;
+
+    margin-top: 8px;
+
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.about-cta-buttons {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.team-link {
+    padding: 80px 0;
+
+    text-align: center;
+
+    background-color: var(--cinza-claro);
+}
+
+.team-link span {
+    display: block;
+    margin-bottom: 12px;
+
+    color: var(--verde-tdb);
+
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.team-link h2 {
+    margin-bottom: 16px;
+
+    font-size: 2.2rem;
+    color: var(--preto);
+}
+
+.team-link p {
+    max-width: 600px;
+
+    margin: 0 auto 28px;
+
+    color: var(--cinza);
+    line-height: 1.7;
+}
