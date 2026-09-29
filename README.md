@@ -1,8 +1,8 @@
-# 💚 TDB Conecta
+# Kindly
 
 ### Plataforma digital centralizada da Turma do Bem
 
-O **TDB Conecta** é uma plataforma digital desenvolvida para centralizar e facilitar a relação entre a **Turma do Bem**, seus doadores, voluntários, empresas parceiras e pessoas que buscam apoio.
+A Kindly é uma plataforma digital desenvolvida para centralizar e facilitar a relação entre a **Turma do Bem**, seus doadores, voluntários, empresas parceiras e pessoas que buscam apoio.
 
 A proposta é reunir diferentes jornadas em um único ambiente, permitindo que cada usuário tenha acesso às funcionalidades correspondentes ao seu perfil, enquanto a organização possui uma visão centralizada das informações, projetos, campanhas, doações e oportunidades de relacionamento.
 
@@ -10,7 +10,7 @@ A proposta é reunir diferentes jornadas em um único ambiente, permitindo que c
 
 ## 🎯 Sobre o Projeto
 
-O TDB Conecta foi desenvolvido com o objetivo de criar uma experiência digital mais organizada, acessível e integrada para os diferentes públicos da organização.
+A Kindly foi desenvolvido com o objetivo de criar uma experiência digital mais organizada, acessível e integrada para os diferentes públicos da organização.
 
 A plataforma reúne funcionalidades como:
 
@@ -98,7 +98,7 @@ A área administrativa centraliza informações e permite acompanhar:
 
 ## 🤖 Assistente Virtual
 
-O TDB Conecta também prevê um **assistente virtual**, desenvolvido com **Watsonx Assistant**, para auxiliar os usuários durante sua navegação.
+A Kindly também prevê um **assistente virtual**, desenvolvido com **Watsonx Assistant**, para auxiliar os usuários durante sua navegação.
 
 O chatbot poderá ajudar em situações como:
 
@@ -151,7 +151,7 @@ A identidade visual do projeto foi inspirada na comunicação visual da **Turma 
 
 ## 📂 Estrutura do Projeto
 
-TDB-Conecta/
+TurmaDoBem-front/
 │
 
 ├── index.html
@@ -222,7 +222,7 @@ TDB-Conecta/
 
 ### Página Inicial
 
-Apresenta a proposta do TDB Conecta e direciona o usuário para as principais jornadas:
+Apresenta a proposta da Kindle e direciona o usuário para as principais jornadas:
 
 * Seja um Doador;
 * Seja um Voluntário;
@@ -406,7 +406,7 @@ A evolução prevista inclui:
 
 ## 📌 Objetivos do Projeto
 
-O TDB Conecta busca:
+A Kindly busca:
 
 * Centralizar os diferentes públicos da organização;
 * Facilitar o acesso às principais jornadas;
@@ -434,7 +434,7 @@ git clone URL_DO_REPOSITORIO
 ### 2. Acesse a pasta
 
 ```bash
-cd TDB-Conecta
+cd TurmaDoBem-front
 ```
 
 ### 3. Abra o projeto
@@ -455,7 +455,7 @@ Também é possível utilizar uma extensão como **Live Server** no Visual Studi
 
 O código-fonte do projeto está disponível no GitHub:
 
-**[Acessar repositório](URL_DO_REPOSITORIO)**
+**https://github.com/Mari1916/TurmaDoBem-front**
 
 ---
 
@@ -471,6 +471,6 @@ Este projeto possui finalidade acadêmica e educacional.
 
 ---
 
-## 💚 TDB Conecta
+## Kindly
 
 **Conectando pessoas, empresas, voluntários e oportunidades em um só lugar.**
