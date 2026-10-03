@@ -1,0 +1,772 @@
+/* ==================================================
+   HERO DE DOAÇÃO
+================================================== */
+
+.doar-hero {
+    padding: 80px 0;
+
+    background-color: var(--cinza-claro);
+}
+
+.doar-hero-container {
+    display: grid;
+
+    grid-template-columns: 1.3fr 0.7fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.doar-hero-content {
+    max-width: 700px;
+}
+
+.doar-tag {
+    color: var(--laranja-tdb);
+
+    font-size: 13px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+.doar-hero h1 {
+    margin: 15px 0 20px;
+
+    font-size: 48px;
+
+    line-height: 1.15;
+}
+
+.doar-hero h1 strong {
+    display: block;
+
+    color: var(--verde-tdb);
+}
+
+.doar-hero-content > p {
+    max-width: 650px;
+
+    color: var(--cinza);
+
+    font-size: 17px;
+}
+
+.doar-hero-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+
+/* ==================================================
+   CARD DE IMPACTO
+================================================== */
+
+.doar-hero-card {
+    padding: 35px;
+
+    background-color: var(--branco);
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 8px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.doar-hero-card > span {
+    color: var(--laranja-tdb);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.doar-hero-card > strong {
+    display: block;
+
+    margin: 15px 0;
+
+    color: var(--verde-tdb);
+
+    font-size: 24px;
+
+    line-height: 1.3;
+}
+
+.doar-hero-card > p {
+    color: var(--cinza);
+
+    font-size: 14px;
+}
+
+.impacto-destaque {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.impacto-destaque div {
+    padding: 15px;
+
+    background-color: var(--cinza-claro);
+
+    border-radius: 6px;
+}
+
+.impacto-destaque strong {
+    display: block;
+
+    color: var(--verde-tdb);
+
+    font-size: 23px;
+}
+
+.impacto-destaque span {
+    color: var(--cinza);
+
+    font-size: 12px;
+}
+
+
+/* ==================================================
+   POR QUE DOAR
+================================================== */
+
+.por-que-doar {
+    padding: 75px 0;
+}
+
+.doar-beneficios {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.doar-beneficio {
+    padding: 30px;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 6px;
+
+    background-color: var(--branco);
+}
+
+.doar-icone {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    background-color: #E8F6EE;
+
+    border-radius: 6px;
+
+    font-size: 22px;
+}
+
+.doar-beneficio h3 {
+    margin-bottom: 10px;
+
+    font-size: 19px;
+}
+
+.doar-beneficio p {
+    color: var(--cinza);
+
+    font-size: 14px;
+}
+
+
+/* ==================================================
+   FIDELIDADE PARA EMPRESAS
+================================================== */
+
+.fidelidade {
+    padding: 75px 0;
+
+    background-color: var(--cinza-claro);
+}
+
+.fidelidade-container {
+    display: grid;
+
+    grid-template-columns: 1fr 0.8fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.fidelidade-conteudo {
+    max-width: 650px;
+}
+
+.fidelidade-tag {
+    color: var(--laranja-tdb);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+.fidelidade-conteudo h2 {
+    margin: 12px 0 18px;
+
+    font-size: 34px;
+
+    line-height: 1.2;
+}
+
+.fidelidade-conteudo p {
+    margin-bottom: 16px;
+
+    color: var(--cinza);
+
+    font-size: 15px;
+}
+
+.fidelidade-conteudo p strong {
+    color: var(--verde-tdb);
+}
+
+
+/* ==================================================
+   CERTIFICADO
+================================================== */
+
+.certificado-card {
+    padding: 10px;
+
+    background-color: var(--branco);
+
+    border: 1px solid #dddddd;
+
+    border-radius: 6px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.certificado-topo {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 18px;
+
+    background-color: var(--verde-tdb);
+
+    color: var(--branco);
+
+    border-radius: 4px 4px 0 0;
+}
+
+.certificado-topo span {
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.certificado-conteudo {
+    padding: 30px;
+
+    text-align: center;
+
+    border: 1px solid #eeeeee;
+
+    border-top: none;
+}
+
+.certificado-selo {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto 15px;
+
+    border: 2px solid var(--laranja-tdb);
+
+    border-radius: 50%;
+
+    color: var(--laranja-tdb);
+
+    font-size: 25px;
+}
+
+.certificado-label {
+    color: var(--laranja-tdb);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.certificado-conteudo h3 {
+    margin: 8px 0 12px;
+
+    color: var(--verde-tdb);
+
+    font-size: 25px;
+}
+
+.certificado-conteudo p {
+    max-width: 400px;
+
+    margin: 0 auto;
+
+    color: var(--cinza);
+
+    font-size: 13px;
+}
+
+.certificado-linha {
+    width: 80%;
+
+    height: 1px;
+
+    margin: 25px auto 12px;
+
+    background-color: #dddddd;
+}
+
+.certificado-rodape {
+    color: var(--cinza);
+
+    font-size: 11px;
+}
+
+
+/* ==================================================
+   PROGRAMAS
+================================================== */
+
+.programas-doar {
+    padding: 75px 0;
+
+    background-color: var(--branco);
+}
+
+.programas-doar-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.programa-doar-card {
+    overflow: hidden;
+
+    background-color: var(--branco);
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 6px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.programa-doar-imagem {
+    height: 180px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.programa-doar-imagem span {
+    padding: 8px 15px;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.programa-dentista {
+    background-color: #E8F6EE;
+
+    color: var(--verde-tdb);
+}
+
+.programa-apolonias {
+    background-color: #FFF1E7;
+
+    color: var(--laranja-tdb);
+}
+
+.programa-estudante {
+    background-color: #EAF5EF;
+
+    color: var(--verde-hover);
+}
+
+.programa-doar-conteudo {
+    padding: 25px;
+}
+
+.programa-categoria {
+    color: var(--laranja-tdb);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+}
+
+.programa-doar-conteudo h3 {
+    margin: 8px 0;
+
+    font-size: 20px;
+}
+
+.programa-doar-conteudo p {
+    min-height: 90px;
+
+    margin-bottom: 18px;
+
+    color: var(--cinza);
+
+    font-size: 14px;
+}
+
+.programa-doar-conteudo a {
+    color: var(--verde-tdb);
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.programa-doar-conteudo a:hover {
+    color: var(--verde-hover);
+}
+
+
+/* ==================================================
+   ÁREA DE DOAÇÃO
+================================================== */
+
+.fazer-doacao {
+    padding: 75px 0;
+}
+
+.doacao-container {
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 70px;
+
+    align-items: start;
+}
+
+.doacao-informacoes {
+    padding-top: 10px;
+}
+
+.doacao-informacoes h3 {
+    margin-bottom: 15px;
+
+    color: var(--verde-tdb);
+
+    font-size: 25px;
+}
+
+.doacao-informacoes > p {
+    margin-bottom: 18px;
+
+    color: var(--cinza);
+
+    font-size: 15px;
+}
+
+
+/* ==================================================
+   AVISOS
+================================================== */
+
+.doacao-aviso {
+    padding: 18px;
+
+    margin-top: 25px;
+
+    background-color: #E8F6EE;
+
+    border-left: 4px solid var(--verde-tdb);
+}
+
+.doacao-aviso.empresa {
+    background-color: #FFF1E7;
+
+    border-left-color: var(--laranja-tdb);
+}
+
+.doacao-aviso strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 14px;
+}
+
+.doacao-aviso span {
+    display: block;
+
+    color: var(--cinza);
+
+    font-size: 13px;
+}
+
+
+/* ==================================================
+   PASSAPORTE DO BEM
+================================================== */
+
+.doacao-passaporte {
+    padding: 20px;
+
+    margin-top: 25px;
+
+    background-color: var(--preto);
+
+    border-radius: 6px;
+
+    color: var(--branco);
+}
+
+.doacao-passaporte span {
+    color: var(--laranja-tdb);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.doacao-passaporte strong {
+    display: block;
+
+    margin: 8px 0;
+
+    font-size: 17px;
+}
+
+.doacao-passaporte p {
+    color: #cccccc;
+
+    font-size: 13px;
+}
+
+
+/* ==================================================
+   FORMULÁRIO
+================================================== */
+
+.formulario-doacao {
+    padding: 35px;
+
+    background-color: var(--branco);
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 6px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.formulario-doacao h3 {
+    margin-bottom: 25px;
+
+    color: var(--preto);
+
+    font-size: 23px;
+}
+
+.campo {
+    margin-bottom: 18px;
+}
+
+.campo label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    background-color: var(--branco);
+
+    color: var(--preto);
+
+    font-size: 14px;
+}
+
+.campo input:focus,
+.campo select:focus {
+    border-color: var(--verde-tdb);
+}
+
+
+/* ==================================================
+   VALORES DA DOAÇÃO
+================================================== */
+
+.valores-doacao {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+}
+
+.valores-doacao button {
+    padding: 12px 5px;
+
+    border: 1px solid var(--verde-tdb);
+
+    border-radius: 5px;
+
+    background-color: var(--branco);
+
+    color: var(--verde-tdb);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.valores-doacao button:hover {
+    background-color: var(--verde-tdb);
+
+    color: var(--branco);
+}
+
+
+/* ==================================================
+   BOTÃO DE DOAÇÃO
+================================================== */
+
+.btn-doar {
+    width: 100%;
+
+    margin-top: 5px;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.doacao-seguranca {
+    display: block;
+
+    margin-top: 12px;
+
+    color: var(--cinza);
+
+    font-size: 11px;
+
+    text-align: center;
+}
+
+
+/* ==================================================
+   CHAMADA FINAL
+================================================== */
+
+.doar-final {
+    padding: 60px 0;
+
+    background-color: var(--verde-tdb);
+
+    color: var(--branco);
+}
+
+.doar-final-container {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+.doar-final-container > div {
+    max-width: 700px;
+}
+
+.doar-final-container span {
+    color: #D9F5E5;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+.doar-final-container h2 {
+    margin: 10px 0;
+
+    font-size: 32px;
+
+    line-height: 1.25;
+}
+
+.doar-final-container p {
+    color: #E4F5EB;
+
+    font-size: 15px;
+}
