@@ -1,34 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-    <title>Doadores | Kindly</title>
-
-    <link
-        rel="stylesheet"
-        href="css/dashboards.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindly - Doadores</title>
+    <link rel="stylesheet" href="css/dashboards.css">
 </head>
 
 <body>
 
-    <div class="dashboard">
+    <div class="painel">
 
+        <!-- MENU Q FICA DO LADINHO -->
+        <aside class="menu-lateral">
 
-        <!-- MENU LATERAL -->
+            <!-- LOGO -->
+            <div class="marca">
 
-        <aside class="sidebar">
-
-            <div class="sidebar-brand">
-
-                <div class="brand-k">
+                <div class="logo-k">
                     K
                 </div>
 
@@ -38,574 +27,433 @@
 
             </div>
 
+            <!-- MENU -->
+            <nav class="navegacao">
 
-            <nav class="sidebar-nav">
-
-                <a href="dashboard.html">
-
-                    <span class="menu-icon">
-                        ▦
-                    </span>
-
-                    Visão geral
-
+                <a href="dashboard.html" class="item-menu">
+                    <span>▦</span>
+                    Visão Geral
                 </a>
 
-
-                <a href="doacoes.html">
-
-                    <span class="menu-icon">
-                        R$
-                    </span>
-
+                <a href="doacoes.html" class="item-menu">
+                    <span>♡</span>
                     Doações
-
                 </a>
 
-
-                <a href="doadores.html" class="active">
-
-                    <span class="menu-icon">
-                        ♙
-                    </span>
-
+                <a href="doadores.html" class="item-menu ativo">
+                    <span>♙</span>
                     Doadores
-
                 </a>
 
-
-                <a href="#">
-
-                    <span class="menu-icon">
-                        ♧
-                    </span>
-
+                <a href="#" class="item-menu">
+                    <span>♧</span>
                     Voluntários
-
                 </a>
 
-
-                <a href="#">
-
-                    <span class="menu-icon">
-                        ♡
-                    </span>
-
+                <a href="#" class="item-menu">
+                    <span>♧</span>
                     Beneficiários
-
                 </a>
 
-
-                <a href="#">
-
-                    <span class="menu-icon">
-                        ◷
-                    </span>
-
+                <a href="#" class="item-menu">
+                    <span>⌕</span>
                     Triagem
-
                 </a>
 
-
-                <a href="#">
-
-                    <span class="menu-icon">
-                        ▣
-                    </span>
-
+                <a href="#" class="item-menu">
+                    <span>▣</span>
                     Campanhas
-
                 </a>
 
-
-                <a href="#">
-
-                    <span class="menu-icon">
-                        ▥
-                    </span>
-
+                <a href="#" class="item-menu">
+                    <span>▤</span>
                     Relatórios
-
                 </a>
 
             </nav>
 
+            <!-- CONFIGURAÇÕES -->
+            <div class="menu-inferior">
 
-            <div class="sidebar-bottom">
-
-                <a href="#">
-
-                    <span class="menu-icon">
-                        ⚙
-                    </span>
-
+                <a href="#" class="item-menu">
+                    <span>⚙</span>
                     Configurações
-
                 </a>
 
             </div>
 
         </aside>
 
-
-        <!-- CONTEÚDO -->
-
-        <main class="main">
-
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="conteudo">
 
             <!-- TOPO -->
+            <header class="cabecalho">
 
-            <header class="topbar">
+                <div class="titulo-pagina">
 
-                <div class="page-title">
+                    <span>Gestão</span>
 
-                    <h2>
-                        Doadores
-                    </h2>
-
-                    <p>
-                        Acompanhe o perfil e o relacionamento dos doadores da Kindly.
-                    </p>
+                    <h2>Doadores</h2>
 
                 </div>
 
+                <!-- USUÁRIO -->
+                <div class="usuario">
 
-                <div class="admin-user">
-
-                    <div class="admin-user-info">
-
-                        <strong>
-                            Administrador
-                        </strong>
-
-                        <span>
-                            Gestão Kindly
-                        </span>
-
+                    <div class="avatar">
+                        A
                     </div>
 
-
-                    <div class="admin-avatar">
-                        A
+                    <div>
+                        <strong>Administrador</strong>
+                        <small>Kindly</small>
                     </div>
 
                 </div>
 
             </header>
 
+            <!-- FILTROS - arrumar qnd aprendermos a deixar funcional -->
+            <section class="filtros">
 
-            <!-- FILTROS -->
+                <select class="filtro">
 
-            <div class="filters">
+                    <option>Todos os perfis</option>
+                    <option>CPF</option>
+                    <option>CNPJ</option>
 
-                <div class="filter">
-                    Todos os perfis ▾
-                </div>
+                </select>
 
-                <div class="filter">
-                    Categoria ▾
-                </div>
+                <select class="filtro">
 
-                <div class="filter">
-                    Cidade ▾
-                </div>
+                    <option>Todas as categorias</option>
+                    <option>Doador único</option>
+                    <option>Doador recorrente</option>
+                    <option>Novo doador</option>
 
-                <div class="filter">
-                    Período ▾
-                </div>
+                </select>
 
-            </div>
+                <select class="filtro">
 
+                    <option>Todas as cidades</option>
+                    <option>São Paulo</option>
+                    <option>Osasco</option>
+                    <option>Cotia</option>
+
+                </select>
+
+                <select class="filtro">
+
+                    <option>Todo o período</option>
+                    <option>Este mês</option>
+                    <option>Últimos 3 meses</option>
+                    <option>Último ano</option>
+
+                </select>
+
+            </section>
 
             <!-- CARDS -->
-
             <section class="cards">
 
-
                 <article class="card">
 
-                    <span class="card-label">
+                    <div class="rotulo-card">
                         Total de doadores
-                    </span>
+                    </div>
 
-                    <strong class="card-value">
+                    <div class="valor-card">
                         3.842
-                    </strong>
+                    </div>
 
-                    <span class="card-detail">
-                        +8,2% no período
-                    </span>
+                    <div class="detalhe-card">
+                        Cadastros ativos
+                    </div>
 
                 </article>
 
-
                 <article class="card">
 
-                    <span class="card-label">
-                        Pessoa Física
-                    </span>
+                    <div class="rotulo-card">
+                        Pessoas físicas
+                    </div>
 
-                    <strong class="card-value">
+                    <div class="valor-card">
                         2.931
-                    </strong>
+                    </div>
 
-                    <span class="card-detail">
+                    <div class="detalhe-card">
                         76,3% dos doadores
-                    </span>
+                    </div>
 
                 </article>
 
-
                 <article class="card">
 
-                    <span class="card-label">
-                        Pessoa Jurídica
-                    </span>
+                    <div class="rotulo-card">
+                        Empresas
+                    </div>
 
-                    <strong class="card-value">
+                    <div class="valor-card">
                         911
-                    </strong>
+                    </div>
 
-                    <span class="card-detail orange">
+                    <div class="detalhe-card">
                         23,7% dos doadores
-                    </span>
+                    </div>
 
                 </article>
-
 
                 <article class="card">
 
-                    <span class="card-label">
+                    <div class="rotulo-card">
                         Recorrentes
-                    </span>
+                    </div>
 
-                    <strong class="card-value">
+                    <div class="valor-card">
                         1.486
-                    </strong>
-
-                    <span class="card-detail">
-                        38,7% da base
-                    </span>
-
-                </article>
-
-            </section>
-
-
-            <!-- CPF X CNPJ + CATEGORIAS -->
-
-            <section class="content-grid">
-
-
-                <!-- CPF X CNPJ -->
-
-                <article class="panel">
-
-                    <div class="panel-header">
-
-                        <h3>
-                            CPF x CNPJ
-                        </h3>
-
                     </div>
 
-
-                    <div class="donor-type">
-
-
-                        <div class="donor-type-card">
-
-                            <small>
-                                Pessoa Física
-                            </small>
-
-                            <strong>
-                                2.931
-                            </strong>
-
-                            <span>
-                                76,3%
-                            </span>
-
-                        </div>
-
-
-                        <div class="donor-type-card orange">
-
-                            <small>
-                                Pessoa Jurídica
-                            </small>
-
-                            <strong>
-                                911
-                            </strong>
-
-                            <span>
-                                23,7%
-                            </span>
-
-                        </div>
-
-
-                    </div>
-
-                </article>
-
-
-                <!-- CATEGORIAS -->
-
-                <article class="panel">
-
-                    <div class="panel-header">
-
-                        <h3>
-                            Categorias
-                        </h3>
-
-                    </div>
-
-
-                    <div class="bar-list">
-
-
-                        <div>
-
-                            <div class="bar-info">
-
-                                <strong>
-                                    Doador único
-                                </strong>
-
-                                <span>
-                                    1.354
-                                </span>
-
-                            </div>
-
-                            <div class="bar-bg">
-
-                                <div
-                                    class="bar-fill"
-                                    style="width: 72%;">
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <div>
-
-                            <div class="bar-info">
-
-                                <strong>
-                                    Doador recorrente
-                                </strong>
-
-                                <span>
-                                    1.486
-                                </span>
-
-                            </div>
-
-                            <div class="bar-bg">
-
-                                <div
-                                    class="bar-fill"
-                                    style="width: 79%;">
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                        <div>
-
-                            <div class="bar-info">
-
-                                <strong>
-                                    Novo doador
-                                </strong>
-
-                                <span>
-                                    642
-                                </span>
-
-                            </div>
-
-                            <div class="bar-bg">
-
-                                <div
-                                    class="bar-fill orange"
-                                    style="width: 43%;">
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
+                    <div class="detalhe-card positivo">
+                        ↑ 9,6%
                     </div>
 
                 </article>
 
             </section>
 
+            <!-- CPF X CNPJ -->
+            <section>
 
-            <!-- TABELA -->
+                <div class="titulo-secao">
 
-            <section class="panel table-panel">
+                    <h3>CPF x CNPJ</h3>
 
-                <div class="table-header">
-
-                    <h3>
-                        Últimos doadores
-                    </h3>
-
-                    <a href="#">
-                        Ver todos →
-                    </a>
+                    <p>Distribuição dos doadores por tipo de cadastro</p>
 
                 </div>
 
+                <div class="tipo-doador">
+
+                    <article class="card-tipo-doador">
+
+                        <div class="rotulo-card">
+                            Pessoa Física
+                        </div>
+
+                        <div class="destaque-valor">
+                            2.931
+                        </div>
+
+                        <div class="barra-tipo">
+
+                            <div class="preenchimento-tipo cpf"></div>
+
+                        </div>
+
+                        <span>76,3% dos doadores</span>
+
+                    </article>
+
+                    <article class="card-tipo-doador">
+
+                        <div class="rotulo-card">
+                            Pessoa Jurídica
+                        </div>
+
+                        <div class="destaque-valor">
+                            911
+                        </div>
+
+                        <div class="barra-tipo">
+
+                            <div class="preenchimento-tipo cnpj"></div>
+
+                        </div>
+
+                        <span>23,7% dos doadores</span>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <!-- CATEGORIAS -->
+            <section class="painel-card">
+
+                <div class="cabecalho-painel">
+
+                    <div>
+
+                        <h3>Categorias de doadores</h3>
+
+                        <p>Classificação dos doadores cadastrados</p>
+
+                    </div>
+
+                </div>
+
+                <div class="lista-barras">
+
+                    <div class="barra">
+
+                        <div class="informacao-barra">
+
+                            <span>Doador único</span>
+
+                            <strong>1.354</strong>
+
+                        </div>
+
+                        <div class="fundo-barra">
+
+                            <div class="preenchimento-barra categoria-1"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="barra">
+
+                        <div class="informacao-barra">
+
+                            <span>Doador recorrente</span>
+
+                            <strong>1.486</strong>
+
+                        </div>
+
+                        <div class="fundo-barra">
+
+                            <div class="preenchimento-barra categoria-2"></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="barra">
+
+                        <div class="informacao-barra">
+
+                            <span>Novo doador</span>
+
+                            <strong>642</strong>
+
+                        </div>
+
+                        <div class="fundo-barra">
+
+                            <div class="preenchimento-barra categoria-3"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- TABELAS -->
+            <section class="painel-card tabela-painel">
+
+                <div class="cabecalho-painel">
+
+                    <div>
+
+                        <h3>Lista de doadores</h3>
+
+                        <p>Últimos registros cadastrados</p>
+
+                    </div>
+
+                </div>
 
                 <table>
 
                     <thead>
 
-                        <tr>
+                        <tr class="cabecalho-tabela">
 
-                            <th>
-                                Doador
-                            </th>
-
-                            <th>
-                                Tipo
-                            </th>
-
-                            <th>
-                                Cidade
-                            </th>
-
-                            <th>
-                                Categoria
-                            </th>
-
-                            <th>
-                                Última doação
-                            </th>
-
-                            <th>
-                                Status
-                            </th>
+                            <th>Doador</th>
+                            <th>Tipo</th>
+                            <th>Cidade</th>
+                            <th>Categoria</th>
+                            <th>Última doação</th>
+                            <th>Status</th>
 
                         </tr>
 
                     </thead>
 
-
                     <tbody>
 
-
                         <tr>
 
                             <td>
-                                <strong>
-                                    Mariana Silva
-                                </strong>
+                                <strong>Mariana Silva</strong>
                             </td>
 
-                            <td>
-                                CPF
-                            </td>
+                            <td>CPF</td>
+
+                            <td>São Paulo</td>
+
+                            <td>Recorrente</td>
+
+                            <td>28/09/2026</td>
 
                             <td>
-                                São Paulo
-                            </td>
-
-                            <td>
-                                Recorrente
-                            </td>
-
-                            <td>
-                                02/10/2026
-                            </td>
-
-                            <td>
-                                <span class="status ativo">
+                                <span class="status ativo-status">
                                     Ativo
                                 </span>
                             </td>
 
                         </tr>
 
-
                         <tr>
 
                             <td>
-                                <strong>
-                                    Empresa Alfa
-                                </strong>
+                                <strong>Empresa Alfa</strong>
                             </td>
 
-                            <td>
-                                CNPJ
-                            </td>
+                            <td>CNPJ</td>
+
+                            <td>Osasco</td>
+
+                            <td>Recorrente</td>
+
+                            <td>25/09/2026</td>
 
                             <td>
-                                São Paulo
-                            </td>
-
-                            <td>
-                                Empresa parceira
-                            </td>
-
-                            <td>
-                                01/10/2026
-                            </td>
-
-                            <td>
-                                <span class="status ativo">
+                                <span class="status ativo-status">
                                     Ativo
                                 </span>
                             </td>
 
                         </tr>
 
-
                         <tr>
 
                             <td>
-                                <strong>
-                                    Lucas Oliveira
-                                </strong>
+                                <strong>Lucas Oliveira</strong>
                             </td>
 
-                            <td>
-                                CPF
-                            </td>
+                            <td>CPF</td>
+
+                            <td>Cotia</td>
+
+                            <td>Novo doador</td>
+
+                            <td>21/09/2026</td>
 
                             <td>
-                                Campinas
-                            </td>
-
-                            <td>
-                                Doador único
-                            </td>
-
-                            <td>
-                                29/09/2026
-                            </td>
-
-                            <td>
-                                <span class="status pendente">
-                                    Acompanhar
+                                <span class="status novo-status">
+                                    Novo
                                 </span>
                             </td>
 
                         </tr>
-
 
                     </tbody>
 
@@ -613,11 +461,9 @@
 
             </section>
 
-
         </main>
 
     </div>
 
 </body>
-
 </html>

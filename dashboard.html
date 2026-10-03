@@ -1,75 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visão Geral | Kindly</title>
-
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/dashboards.css">
+    <title>Kindly - Visão Geral</title>
+    <link rel="stylesheet" href="css/dashboards.css">
 </head>
 
 <body>
 
-    <div class="dashboard">
+    <div class="painel">
 
-        <!-- MENU LATERAL -->
-        <aside class="sidebar">
+        <!-- MENU Q FICA DO LADINHO -->
+        <aside class="menu-lateral">
 
-            <div class="sidebar-brand">
-                <div class="brand-k">K</div>
-                <h1>Kind<span>ly</span></h1>
+            <!-- LOGO -->
+            <div class="marca">
+                <div class="logo-k">K</div>
+
+                <h1>
+                    Kind<span>ly</span>
+                </h1>
             </div>
 
-            <nav class="sidebar-nav">
+            <!-- MENU -->
+            <nav class="navegacao">
 
-                <a href="dashboard.html" class="active">
-                    <span class="menu-icon">▦</span>
-                    Visão geral
+                <a href="dashboard.html" class="item-menu ativo">
+                    <span>▦</span>
+                    Visão Geral
                 </a>
 
-                <a href="doacoes.html">
-                    <span class="menu-icon">R$</span>
+                <a href="doacoes.html" class="item-menu">
+                    <span>♡</span>
                     Doações
                 </a>
 
-                <a href="doadores.html">
-                    <span class="menu-icon">♙</span>
+                <a href="doadores.html" class="item-menu">
+                    <span>♙</span>
                     Doadores
                 </a>
 
-                <a href="#">
-                    <span class="menu-icon">♧</span>
+                <a href="#" class="item-menu">
+                    <span>♧</span>
                     Voluntários
                 </a>
 
-                <a href="#">
-                    <span class="menu-icon">♡</span>
+                <a href="#" class="item-menu">
+                    <span>♧</span>
                     Beneficiários
                 </a>
 
-                <a href="#">
-                    <span class="menu-icon">◷</span>
+                <a href="#" class="item-menu">
+                    <span>⌕</span>
                     Triagem
                 </a>
 
-                <a href="#">
-                    <span class="menu-icon">▣</span>
+                <a href="#" class="item-menu">
+                    <span>▣</span>
                     Campanhas
                 </a>
 
-                <a href="#">
-                    <span class="menu-icon">▥</span>
+                <a href="#" class="item-menu">
+                    <span>▤</span>
                     Relatórios
                 </a>
 
             </nav>
 
-            <div class="sidebar-bottom">
+            <!-- CONFIGURAÇÕES -->
+            <div class="menu-inferior">
 
-                <a href="#">
-                    <span class="menu-icon">⚙</span>
+                <a href="#" class="item-menu">
+                    <span>⚙</span>
                     Configurações
                 </a>
 
@@ -77,224 +80,186 @@
 
         </aside>
 
-
-        <!-- CONTEÚDO -->
-        <main class="main">
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="conteudo">
 
             <!-- TOPO -->
-            <header class="topbar">
+            <header class="cabecalho">
 
-                <div class="page-title">
-                    <h2>Visão geral</h2>
-
-                    <p>
-                        Acompanhe os principais indicadores da Kindly.
-                    </p>
+                <div class="titulo-pagina">
+                    <span>Painel</span>
+                    <h2>Visão Geral</h2>
                 </div>
 
-                <div class="admin-user">
+                <!-- USUÁRIO -->
+                <div class="usuario">
 
-                    <div class="admin-user-info">
-                        <strong>Administrador</strong>
-                        <span>Gestão Kindly</span>
+                    <div class="avatar">
+                        A
                     </div>
 
-                    <div class="admin-avatar">
-                        A
+                    <div>
+                        <strong>Administrador</strong>
+                        <small>Kindly</small>
                     </div>
 
                 </div>
 
             </header>
 
-
             <!-- CARDS -->
             <section class="cards">
 
                 <article class="card">
 
-                    <span class="card-label">
+                    <div class="rotulo-card">
                         Total de doações
-                    </span>
+                    </div>
 
-                    <strong class="card-value">
+                    <div class="valor-card">
                         R$ 248.500
-                    </strong>
+                    </div>
 
-                    <span class="card-detail">
-                        +12,4% no período
-                    </span>
+                    <div class="detalhe-card positivo">
+                        ↑ 12,5% este mês
+                    </div>
 
                 </article>
 
-
                 <article class="card">
 
-                    <span class="card-label">
+                    <div class="rotulo-card">
                         Doadores
-                    </span>
+                    </div>
 
-                    <strong class="card-value">
+                    <div class="valor-card">
                         3.842
-                    </strong>
+                    </div>
 
-                    <span class="card-detail">
-                        2.931 CPF · 911 CNPJ
-                    </span>
+                    <div class="detalhe-card positivo">
+                        ↑ 8,2% este mês
+                    </div>
 
                 </article>
 
-
                 <article class="card">
 
-                    <span class="card-label">
+                    <div class="rotulo-card">
                         Voluntários
-                    </span>
+                    </div>
 
-                    <strong class="card-value">
+                    <div class="valor-card">
                         1.248
-                    </strong>
+                    </div>
 
-                    <span class="card-detail">
-                        982 ativos
-                    </span>
+                    <div class="detalhe-card positivo">
+                        ↑ 5,4% este mês
+                    </div>
 
                 </article>
 
-
                 <article class="card">
 
-                    <span class="card-label">
+                    <div class="rotulo-card">
                         Beneficiários
-                    </span>
+                    </div>
 
-                    <strong class="card-value">
+                    <div class="valor-card">
                         2.480
-                    </strong>
+                    </div>
 
-                    <span class="card-detail orange">
-                        186 em triagem
-                    </span>
+                    <div class="detalhe-card positivo">
+                        ↑ 7,8% este mês
+                    </div>
 
                 </article>
 
             </section>
 
+            <!-- GRID -->
+            <section class="grade-conteudo">
 
-            <!-- GRÁFICOS -->
-            <section class="content-grid">
+                <!-- PAINEL -->
+                <article class="painel-card">
 
+                    <div class="cabecalho-painel">
 
-                <!-- DOAÇÕES CPF X CNPJ -->
-                <article class="panel">
-
-                    <div class="panel-header">
-
-                        <h3>
-                            Doações por perfil
-                        </h3>
-
-                        <a href="doacoes.html">
-                            Ver detalhes →
-                        </a>
+                        <div>
+                            <h3>Doações por perfil</h3>
+                            <p>Distribuição entre pessoas físicas e empresas</p>
+                        </div>
 
                     </div>
 
+                    <!-- CPF X CNPJ -->
+                    <div class="lista-barras">
 
-                    <div class="bar-list">
+                        <div class="barra">
 
-                        <div>
-
-                            <div class="bar-info">
-
-                                <strong>
-                                    CPF
-                                </strong>
-
-                                <span>
-                                    R$ 98.500 · 39,6%
-                                </span>
-
+                            <div class="informacao-barra">
+                                <span>CPF</span>
+                                <strong>R$ 98.500</strong>
                             </div>
 
-                            <div class="bar-bg">
-
-                                <div
-                                    class="bar-fill"
-                                    style="width: 39.6%;">
-                                </div>
-
+                            <div class="fundo-barra">
+                                <div class="preenchimento-barra cpf"></div>
                             </div>
+
+                            <small>39,6%</small>
 
                         </div>
 
+                        <div class="barra">
 
-                        <div>
-
-                            <div class="bar-info">
-
-                                <strong>
-                                    CNPJ
-                                </strong>
-
-                                <span>
-                                    R$ 150.000 · 60,4%
-                                </span>
-
+                            <div class="informacao-barra">
+                                <span>CNPJ</span>
+                                <strong>R$ 150.000</strong>
                             </div>
 
-                            <div class="bar-bg">
-
-                                <div
-                                    class="bar-fill orange"
-                                    style="width: 60.4%;">
-                                </div>
-
+                            <div class="fundo-barra">
+                                <div class="preenchimento-barra cnpj"></div>
                             </div>
+
+                            <small>60,4%</small>
 
                         </div>
 
                     </div>
 
                 </article>
-
 
                 <!-- FUNIL -->
-                <article class="panel">
+                <article class="painel-card">
 
-                    <div class="panel-header">
+                    <div class="cabecalho-painel">
 
-                        <h3>
-                            Relacionamento de doadores
-                        </h3>
-
-                        <a href="doadores.html">
-                            Ver doadores →
-                        </a>
+                        <div>
+                            <h3>Relacionamento de doadores</h3>
+                            <p>Perfil dos doadores cadastrados</p>
+                        </div>
 
                     </div>
 
+                    <div class="funil">
 
-                    <div class="funnel">
-
-                        <div class="funnel-item">
-                            Todos · 3.842
+                        <div class="item-funil primeiro">
+                            <span>Todos os doadores</span>
+                            <strong>3.842</strong>
                         </div>
 
-                        <div class="funnel-item">
-                            Cadastrados · 3.210
+                        <div class="item-funil segundo">
+                            <span>Doadores ativos</span>
+                            <strong>2.931</strong>
                         </div>
 
-                        <div class="funnel-item">
-                            1ª doação · 2.740
+                        <div class="item-funil terceiro">
+                            <span>Doadores recorrentes</span>
+                            <strong>1.486</strong>
                         </div>
 
-                        <div class="funnel-item">
-                            Recorrentes · 1.486
-                        </div>
-
-                        <div class="funnel-item">
-                            Ativos · 1.124
+                        <div class="item-funil quarto">
+                            <span>Doadores engajados</span>
+                            <strong>864</strong>
                         </div>
 
                     </div>
@@ -303,74 +268,56 @@
 
             </section>
 
-
             <!-- ACESSOS RÁPIDOS -->
-            <div class="section-heading">
+            <section>
 
-                <h3>
-                    Acessos rápidos
-                </h3>
+                <div class="titulo-secao">
+                    <h3>Acessos rápidos</h3>
+                    <p>Principais áreas do painel</p>
+                </div>
 
-                <p>
-                    Principais áreas de gestão da plataforma.
-                </p>
+                <div class="acoes-rapidas">
 
-            </div>
+                    <a href="doacoes.html" class="acao-rapida">
 
+                        <div class="icone-acao">
+                            ♡
+                        </div>
 
-            <section class="quick-actions">
+                        <div>
+                            <strong>Doações</strong>
+                            <span>Acompanhar contribuições</span>
+                        </div>
 
+                    </a>
 
-                <a href="doacoes.html" class="quick-action">
+                    <a href="doadores.html" class="acao-rapida">
 
-                    <div class="quick-action-icon">
-                        💰
-                    </div>
+                        <div class="icone-acao">
+                            ♙
+                        </div>
 
-                    <h3>
-                        Doações
-                    </h3>
+                        <div>
+                            <strong>Doadores</strong>
+                            <span>Ver perfis e categorias</span>
+                        </div>
 
-                    <p>
-                        Visualize valores, origem das doações e evolução.
-                    </p>
+                    </a>
 
-                </a>
+                    <a href="#" class="acao-rapida">
 
+                        <div class="icone-acao">
+                            ♧
+                        </div>
 
-                <a href="doadores.html" class="quick-action">
+                        <div>
+                            <strong>Voluntários</strong>
+                            <span>Acompanhar voluntariado</span>
+                        </div>
 
-                    <div class="quick-action-icon">
-                        👥
-                    </div>
+                    </a>
 
-                    <h3>
-                        Doadores
-                    </h3>
-
-                    <p>
-                        Acompanhe pessoa física, pessoa jurídica, categorias e relacionamento.
-                    </p>
-
-                </a>
-
-
-                <a href="#" class="quick-action">
-
-                    <div class="quick-action-icon">
-                        🤝
-                    </div>
-
-                    <h3>
-                        Voluntários
-                    </h3>
-
-                    <p>
-                        Área de gestão dos voluntários cadastrados.
-                    </p>
-
-                </a>
-
+                </div>
 
             </section>
 
@@ -379,5 +326,4 @@
     </div>
 
 </body>
-
 </html>
