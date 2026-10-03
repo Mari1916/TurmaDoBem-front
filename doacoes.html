@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindly - Doações</title>
+    <link rel="stylesheet" href="css/dashboards.css">
+</head>
+
+<body>
+
+    <div class="painel">
+
+        <!-- MENU Q FICA DO LADINHO -->
+        <aside class="menu-lateral">
+
+            <!-- LOGO -->
+            <div class="marca">
+
+                <div class="logo-k">
+                    K
+                </div>
+
+                <h1>
+                    Kind<span>ly</span>
+                </h1>
+
+            </div>
+
+            <!-- MENU -->
+            <nav class="navegacao">
+
+                <a href="dashboard.html" class="item-menu">
+                    <span>▦</span>
+                    Visão Geral
+                </a>
+
+                <a href="doacoes.html" class="item-menu ativo">
+                    <span>♡</span>
+                    Doações
+                </a>
+
+                <a href="doadores.html" class="item-menu">
+                    <span>♙</span>
+                    Doadores
+                </a>
+
+                <a href="#" class="item-menu">
+                    <span>♧</span>
+                    Voluntários
+                </a>
+
+                <a href="#" class="item-menu">
+                    <span>♧</span>
+                    Beneficiários
+                </a>
+
+                <a href="#" class="item-menu">
+                    <span>⌕</span>
+                    Triagem
+                </a>
+
+                <a href="#" class="item-menu">
+                    <span>▣</span>
+                    Campanhas
+                </a>
+
+                <a href="#" class="item-menu">
+                    <span>▤</span>
+                    Relatórios
+                </a>
+
+            </nav>
+
+            <!-- CONFIGURAÇÕES -->
+            <div class="menu-inferior">
+
+                <a href="#" class="item-menu">
+                    <span>⚙</span>
+                    Configurações
+                </a>
+
+            </div>
+
+        </aside>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="conteudo">
+
+            <!-- TOPO -->
+            <header class="cabecalho">
+
+                <div class="titulo-pagina">
+
+                    <span>Gestão</span>
+
+                    <h2>Doações</h2>
+
+                </div>
+
+                <!-- USUÁRIO -->
+                <div class="usuario">
+
+                    <div class="avatar">
+                        A
+                    </div>
+
+                    <div>
+                        <strong>Administrador</strong>
+                        <small>Kindly</small>
+                    </div>
+
+                </div>
+
+            </header>
+
+            <!-- FILTROS -->
+            <section class="filtros">
+
+                <select class="filtro">
+
+                    <option>Este mês</option>
+                    <option>Últimos 3 meses</option>
+                    <option>Último ano</option>
+
+                </select>
+
+                <select class="filtro">
+
+                    <option>CPF + CNPJ</option>
+                    <option>CPF</option>
+                    <option>CNPJ</option>
+
+                </select>
+
+                <select class="filtro">
+
+                    <option>Todas as campanhas</option>
+                    <option>Campanha Alimentação</option>
+                    <option>Campanha Educação</option>
+                    <option>Campanha Saúde</option>
+
+                </select>
+
+                <select class="filtro">
+
+                    <option>Todas as cidades</option>
+                    <option>São Paulo</option>
+                    <option>Osasco</option>
+                    <option>Cotia</option>
+
+                </select>
+
+            </section>
+
+            <!-- CARDS -->
+            <section class="cards">
+
+                <article class="card">
+
+                    <div class="rotulo-card">
+                        Total doado
+                    </div>
+
+                    <div class="valor-card">
+                        R$ 248.500
+                    </div>
+
+                    <div class="detalhe-card positivo">
+                        ↑ 12,5% este mês
+                    </div>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="rotulo-card">
+                        Doações CPF
+                    </div>
+
+                    <div class="valor-card">
+                        R$ 98.500
+                    </div>
+
+                    <div class="detalhe-card">
+                        39,6% do total
+                    </div>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="rotulo-card">
+                        Doações CNPJ
+                    </div>
+
+                    <div class="valor-card">
+                        R$ 150.000
+                    </div>
+
+                    <div class="detalhe-card">
+                        60,4% do total
+                    </div>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="rotulo-card">
+                        Número de doações
+                    </div>
+
+                    <div class="valor-card">
+                        4.721
+                    </div>
+
+                    <div class="detalhe-card positivo">
+                        ↑ 8,4%
+                    </div>
+
+                </article>
+
+            </section>
+
+            <!-- CPF X CNPJ -->
+            <section class="grade-conteudo">
+
+                <article class="painel-card">
+
+                    <div class="cabecalho-painel">
+
+                        <div>
+
+                            <h3>Distribuição das doações</h3>
+
+                            <p>Valor total por tipo de doador</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="lista-barras">
+
+                        <div class="barra">
+
+                            <div class="informacao-barra">
+
+                                <span>CPF</span>
+
+                                <strong>R$ 98.500</strong>
+
+                            </div>
+
+                            <div class="fundo-barra">
+
+                                <div class="preenchimento-barra cpf"></div>
+
+                            </div>
+
+                            <small>39,6%</small>
+
+                        </div>
+
+                        <div class="barra">
+
+                            <div class="informacao-barra">
+
+                                <span>CNPJ</span>
+
+                                <strong>R$ 150.000</strong>
+
+                            </div>
+
+                            <div class="fundo-barra">
+
+                                <div class="preenchimento-barra cnpj"></div>
+
+                            </div>
+
+                            <small>60,4%</small>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- BARRAS -->
+                <article class="painel-card">
+
+                    <div class="cabecalho-painel">
+
+                        <div>
+
+                            <h3>Maior doação</h3>
+
+                            <p>Registro de maior valor no período</p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- DESTAQUE DAS DOAÇÃO -->
+                    <div class="destaque-doacao">
+
+                        <span>Maior contribuição</span>
+
+                        <strong>R$ 25.000</strong>
+
+                        <small>Empresa Alfa · CNPJ</small>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+            <!-- EVOLUÇÃO -->
+            <section class="painel-card">
+
+                <div class="cabecalho-painel">
+
+                    <div>
+
+                        <h3>Evolução das doações</h3>
+
+                        <p>Valor arrecadado nos últimos meses</p>
+
+                    </div>
+
+                </div>
+
+                <div class="evolucao">
+
+                    <div class="mes">
+
+                        <div class="valor-mes">
+                            R$ 32 mil
+                        </div>
+
+                        <div class="barra-mes">
+
+                            <div class="preenchimento-mes valor-1"></div>
+
+                        </div>
+
+                        <span>Jun</span>
+
+                    </div>
+
+                    <div class="mes">
+
+                        <div class="valor-mes">
+                            R$ 41 mil
+                        </div>
+
+                        <div class="barra-mes">
+
+                            <div class="preenchimento-mes valor-2"></div>
+
+                        </div>
+
+                        <span>Jul</span>
+
+                    </div>
+
+                    <div class="mes">
+
+                        <div class="valor-mes">
+                            R$ 45 mil
+                        </div>
+
+                        <div class="barra-mes">
+
+                            <div class="preenchimento-mes valor-3"></div>
+
+                        </div>
+
+                        <span>Ago</span>
+
+                    </div>
+
+                    <div class="mes">
+
+                        <div class="valor-mes">
+                            R$ 55 mil
+                        </div>
+
+                        <div class="barra-mes">
+
+                            <div class="preenchimento-mes valor-4"></div>
+
+                        </div>
+
+                        <span>Set</span>
+
+                    </div>
+
+                    <div class="mes">
+
+                        <div class="valor-mes">
+                            R$ 75 mil
+                        </div>
+
+                        <div class="barra-mes">
+
+                            <div class="preenchimento-mes valor-5"></div>
+
+                        </div>
+
+                        <span>Out</span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- TABELAS -->
+            <section class="painel-card tabela-painel">
+
+                <div class="cabecalho-painel">
+
+                    <div>
+
+                        <h3>Últimas doações</h3>
+
+                        <p>Doações registradas recentemente</p>
+
+                    </div>
+
+                </div>
+
+                <table>
+
+                    <thead>
+
+                        <tr class="cabecalho-tabela">
+
+                            <th>Doador</th>
+                            <th>Tipo</th>
+                            <th>Campanha</th>
+                            <th>Valor</th>
+                            <th>Data</th>
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                <strong>Mariana Silva</strong>
+                            </td>
+
+                            <td>CPF</td>
+
+                            <td>Alimentação</td>
+
+                            <td>R$ 500</td>
+
+                            <td>28/09/2026</td>
+
+                            <td>
+                                <span class="status ativo-status">
+                                    Confirmada
+                                </span>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <strong>Empresa Alfa</strong>
+                            </td>
+
+                            <td>CNPJ</td>
+
+                            <td>Educação</td>
+
+                            <td>R$ 10.000</td>
+
+                            <td>25/09/2026</td>
+
+                            <td>
+                                <span class="status ativo-status">
+                                    Confirmada
+                                </span>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>
+                                <strong>Lucas Oliveira</strong>
+                            </td>
+
+                            <td>CPF</td>
+
+                            <td>Saúde</td>
+
+                            <td>R$ 250</td>
+
+                            <td>21/09/2026</td>
+
+                            <td>
+                                <span class="status novo-status">
+                                    Nova
+                                </span>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
