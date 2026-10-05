@@ -222,7 +222,7 @@ TurmaDoBem-front/
 
 ### Página Inicial
 
-Apresenta a proposta da Kindle e direciona o usuário para as principais jornadas:
+Apresenta a proposta da Kindly e direciona o usuário para as principais jornadas:
 
 * Seja um Doador;
 * Seja um Voluntário;
