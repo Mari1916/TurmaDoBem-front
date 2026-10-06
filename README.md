@@ -313,8 +313,6 @@ Exemplo de estrutura:
 Início
 ├── Sobre
 ├── Projetos
-├── Campanhas
-├── Transparência
 ├── FAQ
 ├── Contato
 └── Entrar
