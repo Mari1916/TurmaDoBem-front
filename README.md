@@ -280,7 +280,7 @@ Apresenta a jornada de doação para pessoas físicas.
 
 ![alt text](./images/read.me/image-7.png)
 
-### Área Administrativa
+### Faça sua doação
 
 Centraliza nossos atrativos para novos possíveis doadores.
 
