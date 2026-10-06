@@ -229,13 +229,21 @@ Apresenta a proposta da Kindly e direciona o usuário para as principais jornada
 * Quero Receber Apoio;
 * Seja uma Empresa Parceira.
 
-![alt text](image.png)
+![alt text](./images/read.me/image.png)
+
+![alt text](./images/read.me/image-11.png)
+
+![alt text](./images/read.me/image-12.png)
+
+![alt text](./images/read.me/image-13.png)
+
+![alt text](./images/read.me/image-14.png)
 
 ### Sobre
 
 Apresenta informações institucionais e a proposta da plataforma.
 
-![alt text](image-1.png)
+![alt text](./images/read.me/image-1.png)
 
 ### Integrantes
 
@@ -250,43 +258,49 @@ Cada integrante possui:
 * GitHub;
 * LinkedIn.
 
-![alt text](image-2.png)
+![alt text](./images/read.me/image-2.png)
 
 ### FAQ
 
 Reúne perguntas e respostas frequentes sobre a plataforma.
 
-![alt text](image-3.png)
+![alt text](./images/read.me/image-3.png)
 
 ### Contato
 
 Disponibiliza um formulário para comunicação com a organização.
 
-![alt text](image-4.png)
+![alt text](./images/read.me/image-4.png)
 
 ### Doações
 
 Apresenta a jornada de doação para pessoas físicas.
 
-![alt text](image-6.png)
+![alt text](./images/read.me/image-6.png)
 
-![alt text](image-7.png)
+![alt text](./images/read.me/image-7.png)
 
 ### Área Administrativa
 
 Centraliza nossos atrativos para novos possíveis doadores.
 
-![alt text](image-8.png)
+![alt text](./images/read.me/image-8.png)
 
-![alt text](image-9.png)
+![alt text](./images/read.me/image-9.png)
 
-![alt text](image-10.png)
+![alt text](./images/read.me/image-10.png)
 
 ### Área Administrativa
 
 Centraliza informações e ferramentas de gestão da plataforma.
 
-![alt text](image-5.png)
+![alt text](./images/read.me/image-5.png)
+
+### Footer
+
+Rodapé padronizado para todas as nossas telas
+
+![alt text](./images/read.me/image-15.png)
 
 ---
 
