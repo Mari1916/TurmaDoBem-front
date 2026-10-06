@@ -375,16 +375,16 @@ A evolução prevista inclui:
 ## 👥 Equipe
 
 **Ana Julia Castilho Soares** · RM00000 · 1TDSPS
-[GitHub](#) · [LinkedIn](#)
+[GitHub](https://github.com/AnaJu1203) · [LinkedIn](https://www.linkedin.com/in/ana-julia-castilho-13b8a02b3)
 
 **Maria Eduarda Alcantara dos Santos** · RM00000 · 1TDSPS
-[GitHub](#) · [LinkedIn](#)
+[GitHub](https://github.com/DuAlcantara) · [LinkedIn](https://www.linkedin.com/in/maria-eduarda-alcantara-dos-santos-213596389/)
 
 **Mariana da Silva Freitas** · RM574261 · 1TDSPS
-[GitHub](https://github.com/Mari1916) · [LinkedIn](https://www.linkedin.com/in/mariana-freitas-3b756433/)
+[GitHub](https://github.com/Mari1916) · [LinkedIn](https://www.linkedin.com/in/mariana-freitas-3b756433a)
 
 **Vitor Hugo Silva Rodrigues** · RM00000 · 1TDSPS
-[GitHub](#) · [LinkedIn](#)
+[GitHub](https://github.com/VitorHugo226) · [LinkedIn](https://www.linkedin.com/in/vitor-hugo-rodrigues-765921300/)
 
 ---
 
