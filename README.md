@@ -222,7 +222,7 @@ TurmaDoBem-front/
 
 ### Página Inicial
 
-Apresenta a proposta da Kindle e direciona o usuário para as principais jornadas:
+Apresenta a proposta da Kindly e direciona o usuário para as principais jornadas:
 
 * Seja um Doador;
 * Seja um Voluntário;
@@ -307,7 +307,7 @@ As jornadas específicas também podem ser acessadas pelos CTAs da página inici
 
 ---
 
-## 📊 Principais Funcionalidades
+## 📊 Principais Funcionalidades que terão no nosso site
 
 | Funcionalidade       | Descrição                                |
 | -------------------- | ---------------------------------------- |
@@ -385,22 +385,6 @@ A evolução prevista inclui:
 
 **Vitor Hugo Silva Rodrigues** · RM00000 · 1TDSPS
 [GitHub](#) · [LinkedIn](#)
-
----
-
-## 📸 Demonstração
-
-### Página Inicial
-
-> Adicione aqui uma imagem ou GIF da página inicial.
-
-### Área de Doação
-
-> Adicione aqui uma captura de tela da página de doação.
-
-### Área de Voluntariado
-
-> Adicione aqui uma captura de tela da página de voluntariado.
 
 ---
 
