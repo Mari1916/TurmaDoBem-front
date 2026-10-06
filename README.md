@@ -235,15 +235,15 @@ Apresenta a proposta da Kindly e direciona o usuário para as principais jornada
 
 ![alt text](./images/read.me/image-12.png)
 
-![alt text](./images/read.me/image-13.png)
-
-![alt text](./images/read.me/image-14.png)
-
 ### Sobre
 
 Apresenta informações institucionais e a proposta da plataforma.
 
 ![alt text](./images/read.me/image-1.png)
+
+![alt text](./images/read.me/image-13.png)
+
+![alt text](./images/read.me/image-14.png)
 
 ### Integrantes
 
