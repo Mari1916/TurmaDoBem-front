@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/doar.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
 </head>
 
 <body>
@@ -29,9 +30,9 @@
 
                 <a href="sobre.html">Sobre</a>
 
-                <a href="#">Projetos</a>
+                <a href="index.html#projetos">Projetos</a>
 
-                <a href="#">Transparência</a>
+                <a href="index.html#transparencia">Transparência</a>
 
                 <a href="faq.html">FAQ</a>
 
@@ -39,8 +40,8 @@
 
             </nav>
 
-            <a href="#" class="btn btn-outline">
-                Entrar
+            <a href="dashboard.html" class="btn btn-outline">
+                Painel admin
             </a>
 
         </div>
@@ -77,11 +78,11 @@
 
                     <div class="doar-hero-buttons">
 
-                        <a href="#" class="btn btn-primary">
+                        <a href="#fazer-doacao" class="btn btn-primary">
                             Quero doar
                         </a>
 
-                        <a href="#" class="btn btn-outline">
+                        <a href="#programas" class="btn btn-outline">
                             Conhecer programas
                         </a>
 
@@ -257,7 +258,7 @@
                         com a plataforma.
                     </p>
 
-                    <a href="#" class="btn btn-primary">
+                    <a href="contato.html?assunto=empresa#formulario-contato" class="btn btn-primary">
                         Conhecer parceria empresarial
                     </a>
 
@@ -370,7 +371,7 @@
                                 vulnerabilidade social.
                             </p>
 
-                            <a href="#">
+                            <a href="#fazer-doacao" data-programa="dentista-do-bem">
                                 Apoiar este programa →
                             </a>
 
@@ -409,7 +410,7 @@
                                 de violência.
                             </p>
 
-                            <a href="#">
+                            <a href="#fazer-doacao" data-programa="apolonias-do-bem">
                                 Apoiar este programa →
                             </a>
 
@@ -447,7 +448,7 @@
                                 da Turma do Bem.
                             </p>
 
-                            <a href="#">
+                            <a href="#fazer-doacao" data-programa="estudante-do-bem">
                                 Apoiar a iniciativa →
                             </a>
 
@@ -568,7 +569,7 @@
                             Dados da doação
                         </h3>
 
-                        <form>
+                        <form id="formulario-doacao" data-demo-form="doacao">
 
                             <div class="campo">
 
@@ -576,7 +577,7 @@
                                     Tipo de doador
                                 </label>
 
-                                <select id="tipo-doador">
+                                <select id="tipo-doador" name="tipo-doador" required>
 
                                     <option value="">
                                         Selecione
@@ -604,7 +605,12 @@
                                 <input
                                     type="text"
                                     id="nome"
+                                    name="nome"
                                     placeholder="Digite seu nome"
+                                    autocomplete="name"
+                                    minlength="2"
+                                    maxlength="100"
+                                    required
                                 />
 
                             </div>
@@ -619,7 +625,12 @@
                                 <input
                                     type="text"
                                     id="documento"
-                                    placeholder="Digite seu CPF ou CNPJ"
+                                    name="documento"
+                                    placeholder="Selecione o tipo de doador primeiro"
+                                    inputmode="numeric"
+                                    autocomplete="off"
+                                    disabled
+                                    required
                                 />
 
                             </div>
@@ -634,7 +645,11 @@
                                 <input
                                     type="email"
                                     id="email"
+                                    name="email"
                                     placeholder="Digite seu e-mail"
+                                    autocomplete="email"
+                                    maxlength="150"
+                                    required
                                 />
 
                             </div>
@@ -646,7 +661,7 @@
                                     Programa ou iniciativa
                                 </label>
 
-                                <select id="programa">
+                                <select id="programa" name="programa" required>
 
                                     <option value="">
                                         Escolha uma opção
@@ -675,25 +690,23 @@
 
                             <div class="campo">
 
-                                <label>
-                                    Valor da doação
-                                </label>
+                                <p class="campo-label">Escolha um valor (R$)</p>
 
-                                <div class="valores-doacao">
+                                <div class="valores-doacao" role="group" aria-label="Valores predefinidos da doação">
 
-                                    <button type="button">
+                                    <button type="button" data-valor-doacao="20" aria-pressed="false">
                                         R$ 20
                                     </button>
 
-                                    <button type="button">
+                                    <button type="button" data-valor-doacao="50" aria-pressed="false">
                                         R$ 50
                                     </button>
 
-                                    <button type="button">
+                                    <button type="button" data-valor-doacao="100" aria-pressed="false">
                                         R$ 100
                                     </button>
 
-                                    <button type="button">
+                                    <button type="button" data-valor-doacao="200" aria-pressed="false">
                                         R$ 200
                                     </button>
 
@@ -711,7 +724,29 @@
                                 <input
                                     type="number"
                                     id="outro-valor"
+                                    min="1"
+                                    step="0.01"
+                                    inputmode="decimal"
                                     placeholder="Digite o valor"
+                                />
+
+                            </div>
+
+
+                            <div class="campo">
+
+                                <label for="valor-doacao">
+                                    Valor da doação
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="valor-doacao"
+                                    name="valor"
+                                    min="1"
+                                    step="0.01"
+                                    placeholder="Selecione um valor ou informe outro"
+                                    required
                                 />
 
                             </div>
@@ -723,7 +758,7 @@
                                     Forma de pagamento
                                 </label>
 
-                                <select id="pagamento">
+                                <select id="pagamento" name="pagamento" required>
 
                                     <option value="">
                                         Selecione
@@ -755,8 +790,8 @@
 
 
                             <span class="doacao-seguranca">
-                                🔒 Seus dados serão utilizados para
-                                processar sua contribuição.
+                                Protótipo acadêmico: nenhuma cobrança será feita
+                                e seus dados não serão enviados.
                             </span>
 
                         </form>
@@ -793,7 +828,7 @@
 
                 </div>
 
-                <a href="#" class="btn btn-secondary">
+                <a href="#fazer-doacao" class="btn btn-secondary">
                     Quero doar
                 </a>
 
@@ -808,7 +843,7 @@
 
     <aside class="chatbot">
 
-        <a href="#" class="chatbot-button">
+        <a href="contato.html#formulario-contato" class="chatbot-button" aria-label="Enviar uma dúvida pelo formulário de contato">
 
             💬
 
@@ -854,11 +889,11 @@
                     Sobre
                 </a>
 
-                <a href="#">
+                <a href="index.html#projetos">
                     Projetos
                 </a>
 
-                <a href="#">
+                <a href="index.html#transparencia">
                     Transparência
                 </a>
 
@@ -896,15 +931,15 @@
                     Seja um Doador
                 </a>
 
-                <a href="#">
+                <a href="contato.html?assunto=voluntariado#formulario-contato">
                     Seja um Voluntário
                 </a>
 
-                <a href="#">
+                <a href="contato.html?assunto=empresa#formulario-contato">
                     Seja uma Empresa Parceira
                 </a>
 
-                <a href="#">
+                <a href="contato.html?assunto=apoio#formulario-contato">
                     Buscar Apoio
                 </a>
 
@@ -927,6 +962,7 @@
 
     </footer>
 
+    <script src="js/main.js" defer></script>
 </body>
 
 </html>

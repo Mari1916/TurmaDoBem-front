@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kindly - Doações</title>
     <link rel="stylesheet" href="css/dashboards.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -41,40 +42,40 @@
                     Doadores
                 </a>
 
-                <a href="#" class="item-menu">
+                <span class="item-menu" aria-disabled="true" title="Módulo fora do escopo desta sprint">
                     <span>♧</span>
                     Voluntários
-                </a>
+                </span>
 
-                <a href="#" class="item-menu">
+                <span class="item-menu" aria-disabled="true" title="Módulo fora do escopo desta sprint">
                     <span>♧</span>
                     Beneficiários
-                </a>
+                </span>
 
-                <a href="#" class="item-menu">
+                <span class="item-menu" aria-disabled="true" title="Módulo fora do escopo desta sprint">
                     <span>⌕</span>
                     Triagem
-                </a>
+                </span>
 
-                <a href="#" class="item-menu">
+                <span class="item-menu" aria-disabled="true" title="Módulo fora do escopo desta sprint">
                     <span>▣</span>
                     Campanhas
-                </a>
+                </span>
 
-                <a href="#" class="item-menu">
+                <span class="item-menu" aria-disabled="true" title="Módulo fora do escopo desta sprint">
                     <span>▤</span>
                     Relatórios
-                </a>
+                </span>
 
             </nav>
 
             <!-- CONFIGURAÇÕES -->
             <div class="menu-inferior">
 
-                <a href="#" class="item-menu">
+                <span class="item-menu" aria-disabled="true" title="Módulo fora do escopo desta sprint">
                     <span>⚙</span>
                     Configurações
-                </a>
+                </span>
 
             </div>
 
@@ -113,7 +114,7 @@
             <!-- FILTROS -->
             <section class="filtros">
 
-                <select class="filtro">
+                <select class="filtro" aria-label="Filtrar por período" data-filter-column="5" data-filter-period>
 
                     <option>Este mês</option>
                     <option>Últimos 3 meses</option>
@@ -121,7 +122,7 @@
 
                 </select>
 
-                <select class="filtro">
+                <select class="filtro" aria-label="Filtrar por tipo de doador" data-filter-column="1">
 
                     <option>CPF + CNPJ</option>
                     <option>CPF</option>
@@ -129,7 +130,7 @@
 
                 </select>
 
-                <select class="filtro">
+                <select class="filtro" aria-label="Filtrar por campanha" data-filter-column="2">
 
                     <option>Todas as campanhas</option>
                     <option>Campanha Alimentação</option>
@@ -138,7 +139,7 @@
 
                 </select>
 
-                <select class="filtro">
+                <select class="filtro" aria-label="Filtrar por cidade" data-filter-column="3">
 
                     <option>Todas as cidades</option>
                     <option>São Paulo</option>
@@ -436,6 +437,7 @@
                             <th>Doador</th>
                             <th>Tipo</th>
                             <th>Campanha</th>
+                            <th>Cidade</th>
                             <th>Valor</th>
                             <th>Data</th>
                             <th>Status</th>
@@ -454,7 +456,9 @@
 
                             <td>CPF</td>
 
-                            <td>Alimentação</td>
+                            <td>Campanha Alimentação</td>
+
+                            <td>São Paulo</td>
 
                             <td>R$ 500</td>
 
@@ -476,7 +480,9 @@
 
                             <td>CNPJ</td>
 
-                            <td>Educação</td>
+                            <td>Campanha Educação</td>
+
+                            <td>Osasco</td>
 
                             <td>R$ 10.000</td>
 
@@ -498,7 +504,9 @@
 
                             <td>CPF</td>
 
-                            <td>Saúde</td>
+                            <td>Campanha Saúde</td>
+
+                            <td>Cotia</td>
 
                             <td>R$ 250</td>
 
@@ -522,5 +530,6 @@
 
     </div>
 
+    <script src="js/main.js" defer></script>
 </body>
 </html>

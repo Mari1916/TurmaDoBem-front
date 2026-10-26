@@ -688,7 +688,7 @@ body {
     height: 100%;
 }
 
-.mes, span {
+.mes > span {
     margin-top: 8px;
     color: var(--cinza);
     font-size: 12px;

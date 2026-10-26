@@ -636,6 +636,13 @@
     font-weight: 700;
 }
 
+.campo-label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
 .campo input,
 .campo select {
     width: 100%;
@@ -694,6 +701,11 @@
 .valores-doacao button:hover {
     background-color: var(--verde-tdb);
 
+    color: var(--branco);
+}
+
+.valores-doacao button[aria-pressed="true"] {
+    background-color: var(--verde-tdb);
     color: var(--branco);
 }
 

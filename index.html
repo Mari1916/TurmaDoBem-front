@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
   </head>
 
   <body>
@@ -21,13 +22,13 @@
         <nav class="nav" aria-label="Navegação principal">
           <a href="index.html" class="active">Início</a>
           <a href="sobre.html">Sobre</a>
-          <a href="#">Projetos</a>
-          <a href="#">Transparência</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#transparencia">Transparência</a>
           <a href="faq.html">FAQ</a>
           <a href="contato.html">Contato</a>
         </nav>
 
-        <a href="#" class="btn btn-outline"> Entrar </a>
+        <a href="dashboard.html" class="btn btn-outline"> Painel admin </a>
       </div>
     </header>
 
@@ -52,7 +53,7 @@
             <div class="hero-buttons">
               <a href="doar.html" class="btn btn-primary"> Seja um Doador </a>
 
-              <a href="#" class="btn btn-secondary">
+              <a href="contato.html?assunto=apoio#formulario-contato" class="btn btn-secondary">
                 Quero Receber Apoio
               </a>
             </div>
@@ -102,7 +103,7 @@
                 voluntariado.
               </p>
 
-              <a href="#"> Quero participar → </a>
+              <a href="contato.html?assunto=voluntariado#formulario-contato"> Quero participar → </a>
             </article>
 
             <article class="journey-card">
@@ -112,7 +113,7 @@
 
               <p>Apoie projetos e fortaleça sua parceria com a Turma do Bem.</p>
 
-              <a href="#"> Quero ser parceiro → </a>
+              <a href="contato.html?assunto=empresa#formulario-contato"> Quero ser parceiro → </a>
             </article>
 
             <article class="journey-card">
@@ -125,14 +126,14 @@
                 solicitar apoio para quem precisa.
               </p>
 
-              <a href="#"> Conhecer formas de apoio → </a>
+              <a href="contato.html?assunto=apoio#formulario-contato"> Conhecer formas de apoio → </a>
             </article>
           </div>
         </div>
       </section>
 
       <!-- ================= PROJETOS ================= -->
-      <section class="projects">
+      <section class="projects" id="projetos">
         <div class="container">
           <div class="section-title section-title-left">
             <span>NOSSOS PROJETOS</span>
@@ -158,7 +159,7 @@
                   Descubra como os projetos conectam pessoas e oportunidades.
                 </p>
 
-                <a href="#"> Conhecer projetos → </a>
+                <a href="#projetos"> Conhecer projetos → </a>
               </div>
             </article>
 
@@ -172,14 +173,14 @@
 
                 <p>Encontre formas de contribuir com nossas campanhas.</p>
 
-                <a href="#"> Ver campanhas → </a>
+                <a href="#projetos"> Ver campanhas → </a>
               </div>
             </article>
 
             <article class="project-card">
               <img
-                src="./images/image-home4.jpg "
-                alt="Ação social da Turma do Bem"
+                src="./images/image-home4.jpg"
+                alt="Voluntários participam de ação da Turma do Bem"
               />
 
               <div class="project-content">
@@ -189,7 +190,7 @@
 
                 <p>Conheça resultados e informações sobre nossas ações.</p>
 
-                <a href="#"> Ver transparência → </a>
+                <a href="#transparencia"> Ver transparência → </a>
               </div>
             </article>
           </div>
@@ -197,7 +198,7 @@
       </section>
 
       <!-- ================= TRANSPARÊNCIA ================= -->
-      <section class="transparency">
+      <section class="transparency" id="transparencia">
         <div class="container transparency-container">
           <div>
             <span class="section-tag"> TRANSPARÊNCIA </span>
@@ -210,7 +211,7 @@
             </p>
           </div>
 
-          <a href="#" class="btn btn-primary">
+          <a href="#transparencia" class="btn btn-primary">
             Conheça nossa transparência
           </a>
         </div>
@@ -231,7 +232,7 @@
               beneficiar dos programas da Turma do Bem.
             </p>
 
-            <a href="#" class="btn btn-primary">
+            <a href="doar.html#fazer-doacao" class="btn btn-primary">
               Conhecer os programas
             </a>
           </div>
@@ -241,7 +242,7 @@
 
     <!-- ================= CHATBOT ================= -->
     <aside class="chatbot">
-      <a href="#" class="chatbot-button">
+      <a href="contato.html#formulario-contato" class="chatbot-button" aria-label="Enviar uma dúvida pelo formulário de contato">
         💬
         <span>Fale com o TDB</span>
       </a>
@@ -260,8 +261,8 @@
 
           <a href="index.html">Início</a>
           <a href="sobre.html">Sobre</a>
-          <a href="#">Projetos</a>
-          <a href="#">Transparência</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#transparencia">Transparência</a>
         </div>
 
         <div class="footer-links">
@@ -276,9 +277,9 @@
           <h4>Participe</h4>
 
           <a href="doar.html">Seja um Doador</a>
-          <a href="#">Seja um Voluntário</a>
-          <a href="#">Seja uma Empresa Parceira</a>
-          <a href="#">Buscar Apoio</a>
+          <a href="contato.html?assunto=voluntariado#formulario-contato">Seja um Voluntário</a>
+          <a href="contato.html?assunto=empresa#formulario-contato">Seja uma Empresa Parceira</a>
+          <a href="contato.html?assunto=apoio#formulario-contato">Buscar Apoio</a>
         </div>
       </div>
 
@@ -288,5 +289,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/main.js" defer></script>
   </body>
 </html>

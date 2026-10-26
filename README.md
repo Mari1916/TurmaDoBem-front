@@ -369,13 +369,29 @@ Nesta etapa, o foco está na construção da interface utilizando:
 * Organização do projeto;
 * Interface desktop.
 
+### Sprint 02 — Evolução do Front-end
+
+Nesta etapa, a interface da Sprint 01 foi mantida e ampliada com:
+
+**Status: implementada e validada no front-end.**
+
+* Layout responsivo para celular, tablet e desktop;
+* Menu de navegação acessível e adaptado a telas pequenas;
+* Interações em JavaScript externo, como FAQ expansível, seleção de valores
+  para a simulação de doação e filtros das tabelas administrativas;
+* Validação de campos obrigatórios, e-mail, documento e valor nos formulários;
+* Feedback acessível para formulários demonstrativos, sem envio de dados ou
+  processamento de pagamentos;
+* Navegação entre as páginas e seções disponíveis.
+
+Para testar, abra `index.html` em um navegador e redimensione a janela. A
+simulação de doação e o formulário de contato são exclusivamente de front-end;
+nenhum dado é armazenado nem enviado a um servidor.
+
 ### Próximas etapas
 
 A evolução prevista inclui:
 
-* JavaScript;
-* Responsividade;
-* Funcionalidades dinâmicas;
 * Backend;
 * Banco de dados;
 * Autenticação;
@@ -426,7 +442,7 @@ Como o Sprint 01 utiliza HTML e CSS, não é necessário instalar dependências.
 ### 1. Clone o repositório
 
 ```bash
-git clone URL_DO_REPOSITORIO
+git clone https://github.com/Mari1916/TurmaDoBem-front.git
 ```
 
 ### 2. Acesse a pasta

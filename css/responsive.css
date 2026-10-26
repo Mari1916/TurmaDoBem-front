@@ -1,0 +1,414 @@
+:focus-visible {
+  outline: 3px solid var(--laranja-tdb, #f58220);
+  outline-offset: 3px;
+}
+
+.menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  padding: 10px;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 4px 0;
+  background: var(--verde-tdb, #00a651);
+}
+
+.contact-form input.campo-invalido,
+.contact-form select.campo-invalido,
+.contact-form textarea.campo-invalido,
+.formulario-doacao input.campo-invalido,
+.formulario-doacao select.campo-invalido {
+  border-color: #b42318;
+}
+
+.form-feedback {
+  min-height: 1.5em;
+  color: #b42318;
+  font-weight: 600;
+}
+
+.form-feedback-sucesso {
+  color: #135031;
+}
+
+.faq-question {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--preto, #1a1a1a);
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faq-question span {
+  color: var(--verde-tdb, #00a651);
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.faq-item p[hidden] {
+  display: none;
+}
+
+.faq-item p:not([hidden]) {
+  margin-top: 12px;
+}
+
+.tabela-painel tr[hidden] {
+  display: none;
+}
+
+.filter-status {
+  flex-basis: 100%;
+  margin: 0;
+  color: var(--cinza, #666);
+  font-size: 0.875rem;
+}
+
+.item-menu[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+@media (max-width: 1024px) {
+  .journey-grid,
+  .team-grid,
+  .profile-grid,
+  .programas-doar-grid,
+  .technology-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-container,
+  .about-grid,
+  .purpose-container,
+  .fidelidade-container,
+  .doacao-container,
+  .contact-container {
+    gap: 36px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .conteudo {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header-container {
+    position: relative;
+    min-height: 72px;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .logo img {
+    width: 128px;
+  }
+
+  .js .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .js .header-container .nav {
+    display: none;
+    order: 3;
+    width: 100%;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+    padding: 8px 0;
+    border-top: 1px solid #eee;
+  }
+
+  .js .header-container.menu-aberto .nav {
+    display: flex;
+  }
+
+  .js .header-container .nav a {
+    padding: 11px 8px;
+  }
+
+  .js .header-container > .btn {
+    margin-left: auto;
+    padding: 10px 14px;
+  }
+
+  .hero-container,
+  .transparency-container,
+  .about-grid,
+  .purpose-container,
+  .about-cta-container,
+  .contact-container,
+  .doar-hero-container,
+  .fidelidade-container,
+  .doacao-container,
+  .doar-final-container {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .hero-content,
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-image img,
+  .about-image img {
+    max-height: 420px;
+  }
+
+  .transparency-container,
+  .about-cta-container,
+  .doar-final-container {
+    align-items: flex-start;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px;
+  }
+
+  .contact-container {
+    display: grid;
+  }
+
+  .painel {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu-lateral {
+    position: static;
+    width: 100%;
+    min-width: 0;
+    min-height: auto;
+    padding: 12px;
+  }
+
+  .marca {
+    padding: 4px 8px 12px;
+  }
+
+  .navegacao {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4px;
+  }
+
+  .item-menu {
+    justify-content: center;
+    padding: 10px 6px;
+    font-size: 12px;
+  }
+
+  .item-menu span {
+    display: none;
+  }
+
+  .menu-inferior {
+    display: none;
+  }
+
+  .conteudo {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0;
+    padding: 22px 18px;
+  }
+
+  .grade-conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .filtros {
+    flex-wrap: wrap;
+  }
+
+  .filtro {
+    flex: 1 1 180px;
+    min-width: 0;
+  }
+
+  .tabela-painel {
+    overflow-x: auto;
+  }
+
+  .tabela-painel table {
+    min-width: 640px;
+  }
+}
+
+@media (max-width: 560px) {
+  .container {
+    width: min(100% - 32px, var(--largura-container, 1200px));
+  }
+
+  .header-container {
+    gap: 8px;
+  }
+
+  .js .header-container > .btn {
+    width: 100%;
+    order: 4;
+  }
+
+  .hero,
+  .doar-hero {
+    padding: 52px 0;
+  }
+
+  .hero h1,
+  .doar-hero h1,
+  .page-hero h1 {
+    font-size: clamp(2rem, 9vw, 2.8rem);
+  }
+
+  .section-title h2,
+  .support-content h2,
+  .team-message-content h2,
+  .faq-cta h2,
+  .transparency h2,
+  .purpose-content h2 {
+    font-size: clamp(1.7rem, 7vw, 2.2rem);
+  }
+
+  .hero-buttons,
+  .doar-hero-buttons,
+  .about-cta-buttons {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .hero-buttons .btn,
+  .doar-hero-buttons .btn,
+  .about-cta-buttons .btn {
+    width: 100%;
+  }
+
+  .journey-grid,
+  .project-grid,
+  .team-grid,
+  .profile-grid,
+  .purpose-highlight,
+  .technology-grid,
+  .doar-beneficios,
+  .fidelidade-container,
+  .programas-doar-grid,
+  .team-grid,
+  .cards,
+  .tipo-doador,
+  .acoes-rapidas {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-box,
+  .formulario-doacao,
+  .doar-hero-card,
+  .painel-card,
+  .card {
+    padding: 20px;
+  }
+
+  .about-intro,
+  .how-it-works,
+  .purpose,
+  .technology,
+  .journeys,
+  .projects,
+  .support,
+  .team,
+  .team-message,
+  .faq-section,
+  .contact-section,
+  .por-que-doar,
+  .fidelidade,
+  .programas-doar {
+    padding: 56px 0;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 42px 0;
+  }
+
+  .chatbot {
+    right: 12px;
+    bottom: 12px;
+  }
+
+  .chatbot-button {
+    padding: 12px 15px;
+  }
+
+  .cabecalho {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .usuario small {
+    display: none;
+  }
+
+  .cards {
+    gap: 12px;
+  }
+
+  .evolucao {
+    gap: 8px;
+    min-width: 0;
+    padding: 16px 0 0;
+  }
+
+  .barra-mes {
+    width: clamp(24px, 8vw, 45px);
+  }
+
+  .valor-mes {
+    font-size: clamp(8px, 2.5vw, 11px);
+    white-space: nowrap;
+  }
+
+  .navegacao {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .item-menu {
+    justify-content: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
