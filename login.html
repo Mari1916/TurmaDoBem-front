@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kindly | Login</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <main class="login-pagina">
+    <section class="login-apresentacao">
+      <a href="index.html" class="logo"><img src="./images/KindlyInteiro.webp" alt="Kindly"></a>
+      <div>
+        <span>Área de acesso</span>
+        <h1>Conecte-se ao trabalho que transforma sorrisos.</h1>
+        <p>Entre para acompanhar atividades, contribuições e atendimentos da plataforma.</p>
+      </div>
+    </section>
+    <section class="login-area">
+      <form class="login-form" id="form-login" action="dashboard.html">
+        <h2>Bem-vindo</h2>
+        <p>Informe seus dados para continuar.</p>
+        <fieldset class="login-perfis">
+          <legend>Escolha seu perfil</legend>
+          <label><input type="radio" name="perfil-login" value="administrador" checked required><span>Administrador</span></label>
+          <label><input type="radio" name="perfil-login" value="doador" required><span>Doador</span></label>
+          <label><input type="radio" name="perfil-login" value="voluntario" required><span>Voluntário</span></label>
+          <label><input type="radio" name="perfil-login" value="empresa" required><span>Empresa</span></label>
+        </fieldset>
+        <label for="email-login">E-mail</label>
+        <input id="email-login" type="email" autocomplete="email" placeholder="seu@email.com" required>
+        <label for="senha-login">Senha</label>
+        <input id="senha-login" type="password" minlength="4" autocomplete="current-password" placeholder="Digite sua senha" required>
+        <button class="btn btn-primary botao-login-admin" type="submit" formaction="dashboard.html">Entrar como administrador</button>
+        <button class="btn btn-primary botao-login-doador" type="submit" formaction="doador-cadastrado.html">Entrar como doador</button>
+        <button class="btn btn-primary botao-login-voluntario" type="submit" formaction="voluntario-cadastrado.html">Entrar como voluntário</button>
+        <button class="btn btn-primary botao-login-empresa" type="submit" formaction="empresa-cadastrada.html">Entrar como empresa</button>
+        <p class="login-feedback" role="status" aria-live="polite"></p>
+        <div class="login-cadastro">
+          <span>Ainda não tem uma conta?</span>
+          <a href="cadastro.html" class="btn btn-outline">Criar cadastro</a>
+        </div>
+        <a href="index.html" class="login-voltar">Voltar ao início</a>
+      </form>
+    </section>
+  </main>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

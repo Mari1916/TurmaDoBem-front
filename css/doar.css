@@ -749,6 +749,214 @@
     color: var(--branco);
 }
 
+.cadastro-conclusao {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.cadastro-conclusao-card {
+    width: min(760px, 100%);
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 8px;
+    background: var(--branco);
+    box-shadow: 0 18px 50px rgba(26, 26, 26, 0.12);
+}
+
+.cadastro-conclusao-icone {
+    width: 58px;
+    height: 58px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 22px;
+    border-radius: 50%;
+    background: var(--verde);
+    color: var(--branco);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.cadastro-conclusao-card h1 {
+    margin-top: 12px;
+    font-size: clamp(30px, 5vw, 46px);
+}
+
+.cadastro-conclusao-card > p {
+    max-width: 650px;
+    margin-top: 16px;
+    color: var(--cinza);
+    line-height: 1.6;
+}
+
+.cadastro-etapas {
+    display: grid;
+    gap: 10px;
+    margin-top: 28px;
+}
+
+.cadastro-etapas div {
+    padding: 14px 16px;
+    border-left: 3px solid var(--laranja);
+    background: var(--cinza-claro);
+}
+
+.cadastro-etapas strong,
+.cadastro-etapas span {
+    display: block;
+}
+
+.cadastro-etapas span {
+    margin-top: 4px;
+    color: var(--cinza);
+    font-size: 13px;
+}
+
+.cadastro-acoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+@media print {
+    .header,
+    .perfil-doador-cabecalho,
+    .perfil-doador-metricas,
+    .perfil-doador-painel:first-child,
+    .perfil-doador-acoes {
+        display: none !important;
+    }
+
+    .perfil-doador-grid {
+        display: block;
+    }
+}
+
+.perfil-doador {
+    padding: 60px 0;
+    background: #f5f5f5;
+}
+
+.perfil-doador-cabecalho {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 28px;
+}
+
+.perfil-doador-cabecalho h1 {
+    margin-top: 12px;
+    font-size: clamp(36px, 5vw, 58px);
+}
+
+.perfil-doador-cabecalho p {
+    margin-top: 10px;
+    color: var(--cinza);
+}
+
+.perfil-doador-metricas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.perfil-doador-metricas article,
+.perfil-doador-painel {
+    border-radius: 8px;
+    background: var(--branco);
+    box-shadow: 0 8px 28px rgba(26, 26, 26, 0.07);
+}
+
+.perfil-doador-metricas article {
+    padding: 22px;
+    border-top: 4px solid var(--laranja-tdb);
+}
+
+.perfil-doador-metricas span,
+.perfil-doador-metricas strong,
+.perfil-doador-metricas small {
+    display: block;
+}
+
+.perfil-doador-metricas span { color: var(--cinza); font-size: 13px; }
+.perfil-doador-metricas strong { margin: 8px 0 4px; font-size: 28px; }
+.perfil-doador-metricas small { color: var(--cinza); }
+
+.perfil-doador-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 24px;
+}
+
+.perfil-doador-painel {
+    padding: 24px;
+}
+
+.perfil-doador-titulo span { color: var(--laranja-tdb); font-size: 12px; font-weight: bold; }
+.perfil-doador-titulo h2 { margin-top: 5px; }
+
+.historico-doacoes { margin-top: 22px; }
+
+.historico-doacoes > div {
+    display: grid;
+    grid-template-columns: 110px 1fr auto;
+    gap: 18px;
+    align-items: center;
+    padding: 16px 0;
+    border-top: 1px solid var(--borda-clara);
+}
+
+.historico-data { color: var(--cinza); font-size: 12px; }
+.historico-doacoes strong { display: block; }
+.historico-doacoes small { display: block; margin-top: 5px; color: var(--cinza); }
+
+.certificado-doador {
+    margin-top: 22px;
+    padding: 32px 24px;
+    border: 2px solid var(--verde-tdb);
+    outline: 6px solid var(--branco);
+    outline-offset: -12px;
+    text-align: center;
+    background: #fafffb;
+}
+
+.certificado-doador > span { color: var(--verde-tdb); font-size: 12px; font-weight: bold; }
+.certificado-doador strong { display: block; margin-top: 18px; color: var(--laranja-tdb); font-size: 20px; }
+.certificado-doador p { margin: 18px 0; color: var(--cinza); line-height: 1.5; }
+.certificado-doador h3 { border-bottom: 1px solid var(--borda-clara); padding-bottom: 8px; }
+.certificado-doador small { display: block; margin-top: 10px; color: var(--cinza); }
+
+.perfil-doador-acoes {
+    display: grid;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.certificado-hint {
+    color: var(--cinza);
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .perfil-doador-metricas { grid-template-columns: repeat(2, 1fr); }
+    .perfil-doador-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+    .cadastro-conclusao-card {
+        padding: 24px 20px;
+    }
+
+    .cadastro-acoes .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .doar-final-container {
     display: flex;
 

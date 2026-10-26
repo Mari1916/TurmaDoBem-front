@@ -402,6 +402,137 @@
   }
 }
 
+/* PADRONIZAÇÃO RESPONSIVA DAS TELAS DE PERFIL, LOGIN E JORNADAS */
+
+@media (max-width: 1024px) {
+  .perfil-doador-grid,
+  .jornada-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .login-pagina {
+    grid-template-columns: minmax(280px, 0.8fr) minmax(420px, 1fr);
+  }
+
+  .perfil-doador-metricas,
+  .transparencia-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .login-pagina {
+    grid-template-columns: 1fr;
+  }
+
+  .login-apresentacao {
+    min-height: 250px;
+  }
+
+  .login-apresentacao {
+    gap: 32px;
+  }
+
+  .login-apresentacao > div {
+    margin-top: 0;
+  }
+
+  .login-area,
+  .cadastro-pagina .login-area {
+    min-height: auto;
+    padding: 32px 20px 48px;
+  }
+
+  .jornada-hero,
+  .perfil-doador {
+    padding: 48px 0;
+  }
+
+  .jornada-hero-grid {
+    gap: 28px;
+  }
+
+  .jornada-hero h1,
+  .perfil-doador-cabecalho h1 {
+    font-size: clamp(32px, 8vw, 46px);
+  }
+
+  .perfil-doador-cabecalho {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .perfil-doador-cabecalho .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .perfil-doador-painel {
+    min-width: 0;
+  }
+
+  .historico-doacoes > div {
+    grid-template-columns: 90px minmax(0, 1fr);
+  }
+
+  .historico-doacoes > div > strong:last-child {
+    grid-column: 2;
+  }
+
+  .transparencia-documentos {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .perfil-doador-metricas,
+  .transparencia-cards,
+  .cadastro-opcoes {
+    grid-template-columns: 1fr;
+  }
+
+  .login-perfis {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .login-perfis span,
+  .cadastro-opcao {
+    min-height: 44px;
+    padding-inline: 6px;
+    font-size: 12px;
+  }
+
+  .jornada-form,
+  .perfil-doador-painel,
+  .certificado-doador,
+  .cadastro-conclusao-card {
+    padding: 20px;
+  }
+
+  .perfil-doador-metricas article strong {
+    font-size: 24px;
+  }
+
+  .historico-doacoes > div {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .historico-doacoes > div > strong:last-child {
+    grid-column: 1;
+  }
+
+  .perfil-doador-acoes .btn,
+  .cadastro-acoes .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .certificado-doador strong {
+    font-size: 17px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

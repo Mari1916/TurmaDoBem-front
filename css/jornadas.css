@@ -1,0 +1,118 @@
+.jornada-hero {
+  min-height: 390px;
+  display: grid;
+  align-items: center;
+  padding: 70px 0;
+  background: #f5f5f5;
+}
+
+.jornada-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.jornada-hero h1 {
+  max-width: 720px;
+  margin-top: 12px;
+  font-size: clamp(38px, 6vw, 66px);
+  line-height: 1.04;
+}
+
+.jornada-hero p {
+  max-width: 650px;
+  margin-top: 18px;
+  color: var(--gray);
+  line-height: 1.65;
+}
+
+.jornada-resumo {
+  padding: 28px;
+  border-left: 5px solid var(--orange);
+  background: #fff;
+}
+
+.jornada-resumo strong,
+.jornada-resumo span { display: block; }
+
+.jornada-resumo strong { font-size: 32px; }
+.jornada-resumo span { margin-top: 8px; color: var(--gray); }
+
+.jornada-secao { padding: 70px 0; }
+
+.jornada-grid {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.jornada-lista {
+  display: grid;
+  gap: 12px;
+}
+
+.jornada-lista div {
+  padding: 16px;
+  border-left: 3px solid var(--green);
+  background: #f5f5f5;
+}
+
+.jornada-form {
+  padding: 30px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.jornada-form label { display: block; margin: 16px 0 7px; font-weight: bold; }
+.jornada-form input,
+.jornada-form select,
+.jornada-form textarea { width: 100%; padding: 13px; border: 1px solid var(--border); border-radius: 6px; font: inherit; }
+.jornada-form button { width: 100%; margin-top: 22px; }
+
+.transparencia-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.transparencia-card {
+  min-height: 170px;
+  padding: 24px;
+  border-top: 4px solid var(--green);
+  background: #fff;
+}
+
+.transparencia-card strong { display: block; font-size: 30px; }
+.transparencia-card span { display: block; margin-top: 10px; color: var(--gray); }
+
+.transparencia-documentos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 32px;
+}
+
+.transparencia-documento {
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.transparencia-documento strong,
+.transparencia-documento span { display: block; }
+.transparencia-documento span { margin: 8px 0 16px; color: var(--gray); }
+
+@media (max-width: 900px) {
+  .jornada-hero-grid,
+  .jornada-grid { grid-template-columns: 1fr; gap: 32px; }
+  .transparencia-cards { grid-template-columns: repeat(2, 1fr); }
+  .transparencia-documentos { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 520px) {
+  .transparencia-cards { grid-template-columns: 1fr; }
+}

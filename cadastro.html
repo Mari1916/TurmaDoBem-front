@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kindly | Criar cadastro</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <main class="login-pagina cadastro-pagina">
+    <section class="login-apresentacao">
+      <a href="index.html" class="logo"><img src="./images/KindlyInteiro.webp" alt="Kindly"></a>
+      <div>
+        <span>Junte-se ao Kindly</span>
+        <h1>Escolha como você quer fazer parte.</h1>
+        <p>Você pode se cadastrar como pessoa física, voluntário ou empresa parceira.</p>
+      </div>
+    </section>
+
+    <section class="login-area">
+      <form class="login-form cadastro-form" id="form-cadastro" action="doador-cadastrado.html">
+        <h2>Crie sua conta</h2>
+        <p>Selecione o tipo de cadastro.</p>
+
+        <fieldset class="cadastro-opcoes" aria-label="Tipo de cadastro">
+          <legend>Tipo de cadastro</legend>
+          <label><input type="radio" name="cadastro-tipo" value="doador" checked><span>Pessoa física</span></label>
+          <label><input type="radio" name="cadastro-tipo" value="voluntario"><span>Voluntário</span></label>
+          <label><input type="radio" name="cadastro-tipo" value="empresa"><span>Empresa</span></label>
+        </fieldset>
+
+        <label for="cadastro-nome">Nome completo</label>
+        <input id="cadastro-nome" name="nome" type="text" minlength="2" required placeholder="Digite seu nome">
+
+        <label for="cadastro-documento" class="campo-documento-label"><span class="documento-cpf">CPF</span><span class="documento-cnpj">CNPJ</span></label>
+        <input id="cadastro-documento" name="documento" type="text" required inputmode="numeric" placeholder="Informe o CPF ou CNPJ">
+
+        <div class="campo-empresa">
+          <label for="cadastro-empresa">Nome da empresa</label>
+          <input id="cadastro-empresa" name="empresa" type="text" placeholder="Razão social">
+        </div>
+
+        <label for="cadastro-email">E-mail</label>
+        <input id="cadastro-email" name="email" type="email" required autocomplete="email" placeholder="seu@email.com">
+
+        <label for="cadastro-senha">Senha</label>
+        <input id="cadastro-senha" name="senha" type="password" minlength="4" required autocomplete="new-password" placeholder="Crie uma senha">
+
+        <label for="cadastro-confirmacao">Confirmar senha</label>
+        <input id="cadastro-confirmacao" name="confirmacao" type="password" minlength="4" required autocomplete="new-password" placeholder="Repita a senha">
+
+        <button class="btn btn-primary cadastro-final-doador" type="submit" formaction="doador-cadastrado.html">Finalizar cadastro</button>
+        <button class="btn btn-primary cadastro-final-voluntario" type="submit" formaction="voluntario-cadastrado.html">Finalizar cadastro como voluntário</button>
+        <button class="btn btn-primary cadastro-final-empresa" type="submit" formaction="empresa-cadastrada.html">Finalizar cadastro da empresa</button>
+        <p class="login-feedback" role="status" aria-live="polite"></p>
+        <a href="login.html" class="login-voltar">Já tenho cadastro</a>
+      </form>
+    </section>
+  </main>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

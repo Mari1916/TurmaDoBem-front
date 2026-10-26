@@ -192,6 +192,19 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.usuario:hover,
+.usuario:focus-visible {
+    background: var(--branco);
+    outline: 2px solid rgba(0, 166, 81, 0.2);
 }
 
 .usuario strong {
@@ -217,6 +230,61 @@ body {
     font-weight: bold;
 }
 
+
+/* PERFIL DO ADMINISTRADOR */
+
+.perfil-admin {
+    position: relative;
+}
+
+.perfil-popover {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    width: 250px;
+    padding: 18px;
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    background: var(--branco);
+    box-shadow: 0 12px 30px rgba(26, 26, 26, 0.14);
+    z-index: 20;
+}
+
+.perfil-popover[hidden] {
+    display: none;
+}
+
+.perfil-popover strong,
+.perfil-popover span {
+    display: block;
+}
+
+.perfil-popover strong {
+    font-size: 15px;
+}
+
+.perfil-popover span {
+    margin-top: 4px;
+    color: var(--cinza);
+    font-size: 13px;
+}
+
+.botao-sair {
+    width: 100%;
+    margin-top: 14px;
+    padding: 10px;
+    border: 1px solid var(--borda);
+    border-radius: 6px;
+    background: var(--branco);
+    color: var(--preto);
+    font-weight: bold;
+    text-align: center;
+}
+
+.botao-sair:hover {
+    border-color: var(--laranja);
+    color: var(--laranja-escuro);
+}
 
 /* CARDS */
 
@@ -560,6 +628,162 @@ body {
     color: var(--laranja-escuro);
 }
 
+
+/* TRAJETÓRIA DO BENEFICIÁRIO */
+
+.beneficiario-link {
+    border: 0;
+    background: transparent;
+    color: var(--verde-escuro);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+}
+
+.beneficiario-link:hover,
+.beneficiario-link:focus-visible {
+    text-decoration-color: currentColor;
+}
+
+.modal-trajetoria {
+    position: fixed;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background: rgba(26, 26, 26, 0.48);
+    z-index: 50;
+}
+
+.modal-trajetoria[hidden] {
+    display: none;
+}
+
+.modal-trajetoria-conteudo {
+    width: min(720px, 100%);
+    max-height: calc(100vh - 48px);
+    overflow-y: auto;
+    border-radius: 8px;
+    background: var(--branco);
+    box-shadow: 0 20px 50px rgba(26, 26, 26, 0.2);
+}
+
+.modal-trajetoria-cabecalho {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 22px 24px;
+    border-bottom: 1px solid var(--borda);
+}
+
+.modal-trajetoria-cabecalho p {
+    margin-top: 5px;
+    color: var(--cinza);
+    font-size: 13px;
+}
+
+.fechar-trajetoria {
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--borda);
+    border-radius: 6px;
+    background: var(--branco);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.trajetoria-corpo {
+    padding: 24px;
+}
+
+.dados-beneficiario {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.dado-beneficiario {
+    padding: 14px;
+    border-left: 3px solid var(--laranja);
+    background: var(--cinza-claro);
+}
+
+.dado-beneficiario span,
+.dado-beneficiario strong {
+    display: block;
+}
+
+.dado-beneficiario span {
+    margin-bottom: 5px;
+    color: var(--cinza);
+    font-size: 12px;
+}
+
+.dado-beneficiario strong {
+    font-size: 13px;
+}
+
+.timeline-beneficiario {
+    display: grid;
+    gap: 0;
+}
+
+.evento-trajetoria {
+    position: relative;
+    padding: 0 0 22px 30px;
+    border-left: 2px solid var(--borda);
+}
+
+.evento-trajetoria:last-child {
+    border-left-color: transparent;
+}
+
+.evento-trajetoria::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    border: 2px solid var(--branco);
+    border-radius: 50%;
+    background: var(--verde);
+}
+
+.evento-trajetoria strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.evento-trajetoria span,
+.evento-trajetoria small {
+    display: block;
+    color: var(--cinza);
+    font-size: 12px;
+}
+
+.evento-trajetoria span {
+    line-height: 1.5;
+}
+
+.evento-trajetoria small {
+    margin-top: 5px;
+}
+
+@media (max-width: 720px) {
+    .dados-beneficiario {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-trajetoria {
+        align-items: end;
+        padding: 12px;
+    }
+}
 
 /* ACESSOS RÁPIDOS */
 
